@@ -1,0 +1,7 @@
+a=1+2
+b=3+4*5
+a+b+c
+sin ( cos( sin( 1-1 ) ) )
+alpha = 2
+pi <- 3.14
+cos(2*pi*alpha)

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+	<head>
+		<meta charset="utf-8">
+		<title>TP 2</title>
+		<link rel="stylesheet" href="style.css">
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+	</head>
+	<body>
+		<div id="menu">
+			<div class="options">
+				x = <input type="number" id="x" /> <!-- composante x du point -->
+			</div>
+			<div class="options">
+				y = <input type="number" id="y" /><!-- composante y du point -->
+			</div>
+			<div class="options">
+				<input type = "button" onclick="addPoint()" value = "Ajouter le point"> <!-- Le bouton pour valider le nouveau point -->
+			</div>
+			<div class="options">
+				<p>_______________________________________</p>
+				<input type = "button" onclick="DrawBezierCurve(points)" value = "Tracer la courbe de bézier"> <!-- Tracer la courbe -->
+			</div>
+			<div class="options">
+				<input type = "button" id="showStep" onclick="showStep()" value = "Tracer une étape"> <!-- Montrer les étapes -->
+			</div>
+			<div class="options">
+				<input type = "button" onclick="cleanStep()" value = "Effacer les tracés"> <!-- Effacer les tracés -->
+			</div>
+			<input id="t" type="range" name="t" min="0" max="1" step=0.01 value="1"> <!-- Pour choisir le tracé -->
+			<div class="options">
+				<div class="options">
+					Numéro du point = <input type="number" id="editid" /> <!-- id du point a modifier -->
+				</div>
+				<div class="options">
+					new x = <input type="number" id="newx" /> <!-- composante x du point -->
+				</div>
+				<div class="options">
+					new y = <input type="number" id="newy" /><!-- composante y du point -->
+				</div>
+				<div class="options">
+					<input type = "button" onclick="editPoint()" value = "Modifier le point">
+				</div>
+				<input type = "button" onclick="cleanLastPoint()" value = "Effacer le dernier point"> <!-- Effacer le dernier point tracé -->
+			</div>
+
+		</div>
+		<div id="pointList">
+
+		</div>
+		<div id="drawingZone">
+		</div>
+		<script src="three.js"></script>
+		<script src="drawing.js"></script>
+	</body>
+</html>

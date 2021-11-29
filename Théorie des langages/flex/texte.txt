@@ -1,0 +1,21 @@
+if (     alpha1          >           6.66
+
+	//Ceci est un commentaire random pcq jsp quoi ecrire.
+	int X_3=1.2+1.3+1.444;
+	/* 
+	On n'arrête pas un ch/ar avec des** politesses,
+	J'rap,
+	N'attends pas q/ue** ma folie/ cesse
+	*/
+	abababab*/
+	// toudoum
+	az */ az
+	heu jsp quoi ecrire mec
+	alpha 666
+	364
+	// autre comm
+	if
+	delete jp
+wchar_t deletecafdp= jppmecdecettemerdedeprogramme;
+	je break le code bb
+	return 0;

@@ -1,0 +1,17 @@
+body { 
+	margin: 0; 
+}
+
+input {
+	border-radius: 	5px;
+}
+
+#menu {
+	position: absolute;
+	color: white;
+	padding: 10px;
+}
+
+.options{
+	padding: 5px;
+}

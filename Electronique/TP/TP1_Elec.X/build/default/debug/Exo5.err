@@ -1,0 +1,5 @@
+Warning[226] C:\USERS\PIERR\DOCUMENTS\ISEN\CIR3\ELECTRONIQUE\TP\TP1_ELEC.X\EXO5.ASM 136 : Destination address must be word aligned
+Warning[207] C:\USERS\PIERR\DOCUMENTS\ISEN\CIR3\ELECTRONIQUE\TP\TP1_ELEC.X\EXO5.ASM 226 : Found label after column 1. (cherche_min)
+Warning[207] C:\USERS\PIERR\DOCUMENTS\ISEN\CIR3\ELECTRONIQUE\TP\TP1_ELEC.X\EXO5.ASM 232 : Found label after column 1. (boucle)
+Warning[207] C:\USERS\PIERR\DOCUMENTS\ISEN\CIR3\ELECTRONIQUE\TP\TP1_ELEC.X\EXO5.ASM 243 : Found label after column 1. (cherche_max)
+Warning[207] C:\USERS\PIERR\DOCUMENTS\ISEN\CIR3\ELECTRONIQUE\TP\TP1_ELEC.X\EXO5.ASM 253 : Found label after column 1. (boucle2)

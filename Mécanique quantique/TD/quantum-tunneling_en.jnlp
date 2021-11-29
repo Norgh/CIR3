@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- JNLP File for Quantum Tunneling and Wave Packets -->
+
+<jnlp spec="1.0+" codebase="https://phet.colorado.edu/sims/quantum-tunneling" href="quantum-tunneling_en.jnlp">
+
+    <information>
+
+        <title>Quantum Tunneling and Wave Packets</title>
+
+        <vendor>University of Colorado, Department of Physics</vendor>
+
+        <description>@PROJECT.DESCRIPTION@</description>
+
+        <description kind="short">The Quantum Tunneling and Wave Packets Simulation</description>
+
+        <offline-allowed/>
+
+    </information>
+
+    <resources>
+
+        <j2se version="1.4+"/>
+
+        <property name="javaws.phet.locale" value="en" />
+<property name="javaws.user.language" value="en" />
+
+        <jar href="quantum-tunneling_all.jar"/>
+
+    </resources>
+
+    
+
+    <application-desc main-class="edu.colorado.phet.quantumtunneling.QuantumTunnelingApplication">
+
+        
+
+    </application-desc>
+
+</jnlp>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TP 1</title>
+		<link rel="stylesheet" href="style.css">
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+	</head>
+	<body>
+		<div id="menu">
+			<div class="options">
+				x(u)=<input type="text" id="functionx" /> <!-- composante x de la courbe paramétrique -->
+			</div>
+			<div class="options">
+				y(u)=<input type="text" id="functiony" /><!-- composante y de la courbe paramétrique -->
+			</div>
+			<div class="options">
+				<input type = "button" onclick = "drawCurve()" value = "Tracer">
+			</div>
+			<div class="options">
+				<p>_______________________________________</p>
+				<p>Courbes paramétriques pré-enregistrées</p>
+				<input type = "button" onclick = "drawCircle()" value = "Tracer le cercle"> 
+			</div>
+			<div class="options">
+				<input type = "button" onclick = "drawHeart()" value = "Tracer le coeur">
+			</div>
+		</div> 
+		<script src="three.js"></script>
+		<script src="drawing.js"></script>
+	</body>
+</html>

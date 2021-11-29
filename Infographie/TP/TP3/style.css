@@ -1,0 +1,40 @@
+body { 
+    margin: 0; 
+}
+
+input {
+    border-radius:     5px;
+}
+
+#menu {
+    position: absolute;
+    color: white;
+    padding: 10px;
+    z-index: 2;
+}
+
+.options{
+    padding: 5px;
+}
+
+#drawingZone{
+    position: absolute;
+    z-index: 0;
+    top:0px;
+    right:0px;
+    width: 100%;
+    height: 100%;
+}
+
+#pointer{
+	position: absolute;
+	z-index: 1;
+}
+
+#pointList{
+    position: absolute;
+	z-index: 2;
+    top: 420px;
+    padding: 10px;
+    color: white;
+}
