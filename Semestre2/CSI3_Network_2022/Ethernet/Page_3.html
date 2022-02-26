@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Radiographie - Protocole Ethernet</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<script type="text/javascript" src="Skin/nhpup.js"></script>
+<script type="text/javascript" src="Skin/know.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<iframe id="inlineFrame" title="Inline Frame" width="258" height="144" src="menu.html"></iframe></br>
+<ul>
+<li><a href="index.html" class="daddy main-node">Protocole Ethernet</a></li>
+<li><a href="Page_1.html" class="no-ch">Histoire</a></li>
+<li><a href="Page_2.html" class="no-ch">Etude du protocole</a></li>
+<li id="active"><a class="active no-ch">Radiographie</a></li>
+<li><a href="Page_4.html" class="no-ch">Trame</a></li>
+<li><a href="Page_5.html" class="no-ch">Gestion des collisions</a></li>
+<li><a href="Page_6.html" class="no-ch">Travaux dirigés</a></li>
+<li><a href="Page_7.html" class="no-ch">Evaluation</a></li>
+<li><a href="Page_8.html" class="no-ch">Définitions</a></li>
+<li><a href="Page_9.html" class="no-ch">Examen</a></li>
+</ul>
+<div class="card-body">
+<div class="form-group">
+<textarea id="addNote" class="form-control" aria-label="With textarea"></textarea>
+</div>
+<button style="height:25px;width:120px;background-color: white" id="addBtn" class="btn btn-outline-primary"><h6 style="color: black; font-size:12px;">Ajouter la note</h6></button>
+</div>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_2.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_4.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Radiographie - Protocole Ethernet</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Cartographie&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_3_1" class="scores" data-blockname="Cartographie">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 1, 0);"></image>
+<span id="score_3_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 1, 1);"></image>
+<span id="score_3_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 1, 2);"></image>
+<span id="score_3_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 1, 3);"></image>
+<span id="score_3_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 1, 3);"></image>
+<span id="score_3_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 1, 3);"></image>
+<span id="score_3_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_1_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_1_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 1, 6);"></image>
+<span id="score_3_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+Cette carte représente les composants du protocole Ethernet dans un modèle en
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Les protocoles sont structurés en différents modules pour être indépendants les uns envers les autres.</br></br>Les messages générés par une couche supérieure sont encapsulés par une couche inférieure lors de l&rsquo;émission. A l&rsquo;inverse lors de la réception.');">couches.</a></span></b>
+</br></br><image src="cartographie.jpg"></image>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#009900" >Expérience&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_2">
+<div id="score_3_2" class="scores" data-blockname="Expérience">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 2, 0);"></image>
+<span id="score_3_2_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 2, 1);"></image>
+<span id="score_3_2_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 2, 2);"></image>
+<span id="score_3_2_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 2, 3);"></image>
+<span id="score_3_2_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 2, 3);"></image>
+<span id="score_3_2_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 2, 3);"></image>
+<span id="score_3_2_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_2_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_2_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 2, 6);"></image>
+<span id="score_3_2_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_2_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_2_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_2_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_2" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+Cet exemple présente une trame Ethernet capturée sur un réseau local avec le logiciel
+<b><span STYLE="font-size:4.5mm"><a href="https://www.wireshark.org/" target="_blank" style="color:#009900" >Wireshark.</a></span></b>
+</br></br><image src="Ethernet_capture_1a.jpg"></image></br></br>Cette trame est représentée en mode
+<b><span STYLE="font-size:4.5mm;color:#009900"><a onmouseover="nhpup.popup('Les octets sont représentés en séquence sans regroupement par fonctions.');"> "raw"</a></span></b>
+, où chaque octet est représenté en hexadécimal et où ils sont regroupés en ligne de 16 octets. La position relative de la ligne dans la trame est indiquée sur la gauche.</br></br>L'analyse d'une trame serait fastidieuse dans ces conditions. Le logiciel identifie chaque champ de la trame et représente l'ensemble sous forme détaillée comme ce qui est présenté dans les paragraphes ci-dessous.</br></br>Vous pouvez réaliser vous-même l'analyse de cette trame en téléchargeant le logiciel
+<b><span STYLE="font-size:4.5mm"><a href="https://www.wireshark.org/" target="_blank" style="color:#009900" >Wireshark </a></span></b>
+et en ouvrant le
+<b><span STYLE="font-size:4.5mm"><a href="Ethernet_capture_1.pcapng" target="_blank" style="color:#009900" >fichier </a></span></b>
+qui contient la capture des trames.</br>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#fd7e35" >Vue d'ensemble&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_3">
+<div id="score_3_3" class="scores" data-blockname="Vue d'ensemble">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 3, 0);"></image>
+<span id="score_3_3_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 3, 1);"></image>
+<span id="score_3_3_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 3, 2);"></image>
+<span id="score_3_3_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 3, 3);"></image>
+<span id="score_3_3_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 3, 3);"></image>
+<span id="score_3_3_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 3, 3);"></image>
+<span id="score_3_3_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_3_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_3_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 3, 6);"></image>
+<span id="score_3_3_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_3_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_3_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_3_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_3" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+Avec Wireshark, vous disposez d'une lecture globale présentant
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Les trames sont imbriquées les unes dans les autres comme des poupées russes, jusqu&rsquo;à contenir un éventuel message.');">l'encapsulation </a></span></b>
+des différents protocoles.</br></br><image src="Ethernet_capture_2.jpg"></image></br></br>Tout d'abord l'entête Ethernet avec les adresses source et destination, puis le message. Dans le cas présent, le message est une requête
+<b><span STYLE="font-size:4.5mm;color:#fd7e35"><a onmouseover="nhpup.popup('Ce protocole permettra d&rsquo;avoir connaissance de l&rsquo;adresse Ethernet du destinataire.');">ARP (</a></span></b>
+Address Resolution Protocol).</br>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#fd7e35" >Vue détaillée de l'entête Ethernet&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_4">
+<div id="score_3_4" class="scores" data-blockname="Vue détaillée de l'entête Ethernet">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 4, 0);"></image>
+<span id="score_3_4_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 4, 1);"></image>
+<span id="score_3_4_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 4, 2);"></image>
+<span id="score_3_4_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 4, 3);"></image>
+<span id="score_3_4_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 4, 3);"></image>
+<span id="score_3_4_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 4, 3);"></image>
+<span id="score_3_4_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_4_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_4_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 4, 6);"></image>
+<span id="score_3_4_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_4_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_4_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_4_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_4" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+En développant le premier module, vous avez accès au détail de la partie Ethernet qui correspond à l'entête de la trame où se trouvent les
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Les adresses Ethernet sont composées de 6 octets.');">adresses </a></span></b>
+source et destination, et le
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Quelques exemples :</br>0x806 pour ARP</br>0x800 pour IP.');">code du protocole </a></span></b>
+encapsulé (voir
+<b><span STYLE="font-size:4.5mm;color:#009900"><a onmouseover="nhpup.popup('Les RFC (Request For Comments) sont des documents de référence qui décrivent, spécifient, aident à l&rsquo;implémentation, standardisent et débattent de la majorité des normes, standards, technologies et protocoles dont la Communauté Internet a besoin.');">RFC </a></span></b>
+<b><span STYLE="font-size:4.5mm"><a href="https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xhtml" target="_blank" style="color:#009900" >Ethertypes)</a></span></b>
+.</br></br><image src="Ethernet_capture_3a.jpg"></image></br>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#fd7e35" >Vue détaillée du message&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_5">
+<div id="score_3_5" class="scores" data-blockname="Vue détaillée du message">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 5, 0);"></image>
+<span id="score_3_5_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 5, 1);"></image>
+<span id="score_3_5_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 5, 2);"></image>
+<span id="score_3_5_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 5, 3);"></image>
+<span id="score_3_5_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 5, 3);"></image>
+<span id="score_3_5_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 5, 3);"></image>
+<span id="score_3_5_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_5_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_5_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 5, 6);"></image>
+<span id="score_3_5_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_5_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_5_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_5_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_5" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+En développant le second module, vous avez accès au détail du message, appelé aussi
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Un payload est une suite d&rsquo;octets correspondant à un message ou un protocole encapsulé dans la trame d&rsquo;un autre protocole.');">payload,</a></span></b>
+transporté dans la trame Ethernet.</br></br>Dans le cas présent , le message correspond à une requête ARP et fera l'objet d'une étude ultérieure.</br></br><image src="Ethernet_capture_4.jpg"></image>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_2.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_4.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_notes.png" />
+<span class="iDeviceTitle" color:#009900 >Notes</span></br>
+<div class="iDevice_inner">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<form class="d-flex">
+<input id="searchNote" class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+</form>
+</div>
+</div>
+</nav>
+<div class="container my-3" id="container">
+<div class="card text-dark bg-light mb-3">
+</div>
+<div id="noNotesMatches" class="row container-fluid">
+</div>
+<div id="notesList" class="row container-fluid">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/notes.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

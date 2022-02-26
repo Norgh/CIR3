@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Gestion des collisions - Protocole Ethernet</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<script type="text/javascript" src="Skin/nhpup.js"></script>
+<script type="text/javascript" src="Skin/know.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<iframe id="inlineFrame" title="Inline Frame" width="258" height="144" src="menu.html"></iframe></br>
+<ul>
+<li><a href="index.html" class="daddy main-node">Protocole Ethernet</a></li>
+<li><a href="Page_1.html" class="no-ch">Histoire</a></li>
+<li><a href="Page_2.html" class="no-ch">Etude du protocole</a></li>
+<li><a href="Page_3.html" class="no-ch">Radiographie</a></li>
+<li><a href="Page_4.html" class="no-ch">Trame</a></li>
+<li id="active"><a class="active no-ch">Gestion des collisions</a></li>
+<li><a href="Page_6.html" class="no-ch">Travaux dirigés</a></li>
+<li><a href="Page_7.html" class="no-ch">Evaluation</a></li>
+<li><a href="Page_8.html" class="no-ch">Définitions</a></li>
+<li><a href="Page_9.html" class="no-ch">Examen</a></li>
+</ul>
+<div class="card-body">
+<div class="form-group">
+<textarea id="addNote" class="form-control" aria-label="With textarea"></textarea>
+</div>
+<button style="height:25px;width:120px;background-color: white" id="addBtn" class="btn btn-outline-primary"><h6 style="color: black; font-size:12px;">Ajouter la note</h6></button>
+</div>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_4.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_6.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Gestion des collisions - Protocole Ethernet</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#009900" >Padding&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_5_1" class="scores" data-blockname="Padding">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 1, 0);"></image>
+<span id="score_5_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 1, 1);"></image>
+<span id="score_5_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 1, 2);"></image>
+<span id="score_5_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 1, 3);"></image>
+<span id="score_5_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 1, 3);"></image>
+<span id="score_5_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 1, 3);"></image>
+<span id="score_5_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_1_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_1_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 1, 6);"></image>
+<span id="score_5_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+Le
+<b><span STYLE="font-size:4.5mm;color:#009900"><a onmouseover="nhpup.popup('Le padding est utilisé pour compléter une trame Ethernet avec une suite de 0.');"> "padding" </a></span></b>
+est utilisé pour compléter la trame Ethernet et obtenir un total minimal de 64 octets, permettant ainsi de détecter les
+<b><span STYLE="font-size:4.5mm;color:#009900"><a onmouseover="nhpup.popup('Le protocole Ethernet se base sur le mode CSMA/CD, Carrier Sense Multiple Access with Collision Detection (accès multiple avec écoute de porteuse et détection de collision), pour détecter une collision et réémettre une trame.');">collisions de trames </a></span></b>
+en toutes circonstances.</br></br>Cette notion dépasse le cadre de ce cours mais peut s'avérer nécessaire pour identifier les champs d'une trame.</br>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_2">
+<div id="score_5_2" class="scores" data-blockname="Padding">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 2, 0);"></image>
+<span id="score_5_2_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 2, 1);"></image>
+<span id="score_5_2_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 2, 2);"></image>
+<span id="score_5_2_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 2, 3);"></image>
+<span id="score_5_2_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 2, 3);"></image>
+<span id="score_5_2_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 2, 3);"></image>
+<span id="score_5_2_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_2_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_2_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 2, 6);"></image>
+<span id="score_5_2_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_2_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_2_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_2_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_2" class="block" style="display:block">
+<div id="actDiv2_0" style="display:block">
+<a onmousedown="Javascript:showDiv(2);">
+<image src="Skin/icon_activity_knowledge_big_green.png"></image>&nbsp;&nbsp;Comment détecter les collisions de trames ?</a>
+</div>
+<div id="actDiv2_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(2);">
+<image src="Skin/icon_activity_knowledge_small_green.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment détecter les collisions de trames ?</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Collision_detection.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+<nav id="sitenav_3">
+<div id="score_5_3" class="scores" data-blockname="Padding">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 3, 0);"></image>
+<span id="score_5_3_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 3, 1);"></image>
+<span id="score_5_3_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 3, 2);"></image>
+<span id="score_5_3_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 3, 3);"></image>
+<span id="score_5_3_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 3, 3);"></image>
+<span id="score_5_3_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 3, 3);"></image>
+<span id="score_5_3_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_3_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_3_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 3, 6);"></image>
+<span id="score_5_3_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_3_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_3_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_3_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_3" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+</br>La présentation brute de la trame met en évidence une trame suivie d'une suite d'octets à 0 pour le "padding", ce qui correspond à la réalité du point de vue position.</br></br><image src="Ethernet_capture_1b.jpg"></image></br></br></br>L'analyse détaillée de la trame met en évidence l'encapsulation d'un message ARP dans une trame Ethernet et la suite d'octets à 0 du "padding" est positionnée dans la trame Ethernet. Cette représentation "logique" évite de considérer le "padding" comme faisant partie du message ARP.</br></br><image src="Ethernet_capture_3b.jpg"></image></br>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_4">
+<div id="score_5_4" class="scores" data-blockname="Padding">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 4, 0);"></image>
+<span id="score_5_4_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 4, 1);"></image>
+<span id="score_5_4_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 4, 2);"></image>
+<span id="score_5_4_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 4, 3);"></image>
+<span id="score_5_4_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 4, 3);"></image>
+<span id="score_5_4_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 4, 3);"></image>
+<span id="score_5_4_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_5_4_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_5_4_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 4, 6);"></image>
+<span id="score_5_4_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_4_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_4_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_4_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_4" class="block" style="display:block">
+<form name="quizForm_f4" id="quizForm_f4" style="display:block">
+<div id="f4" data-formname="f4" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[5]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Trame"]'></div>
+<div id="notimeout_f4" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(5, 4)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(4)" />&nbsp;&nbsp
+<strong><span id="cdtime_f4"></span></strong>
+</div>
+<div id="goquiz_f4" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_text(30, 0, 400, 'Indice', 'Attention, la représentation se fait en hexadécimal.');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f4_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_green.gif" height="20"></image>&nbsp;Combien y a-t-il d'octets de padding dans la trame Ethernet précédente ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f4_q1" id="f4_q1_p1" value="04a1a514f18a0155624c8bfebabd908e58c061e65f198da8a528cde2595f6e94" /></td>
+<td>
+<div id="ans_f4_q1_p1" class="block" style="color:black;display:block">6 octets.</div>
+<div id ="f4_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p1_0" style="display:none" data-feedback='["Les octets de padding complètent le payload."]'>Les octets de padding complètent le payload.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f4_q1" id="f4_q1_p2" value="df4bd5b4843f40f955ace809a1eb31316cc3691f50a931bdb67932e3884c3a5f" /></td>
+<td>
+<div id="ans_f4_q1_p2" class="block" style="color:black;display:block">16 octets.</div>
+<div id ="f4_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p2_0" style="display:none" data-feedback='["Vous avez dû en oublier."]'>Vous avez dû en oublier.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f4_q1" id="f4_q1_p3" value="2c3eed34d44cfbf664944832e0618f0be066b9b6c26f0cbde64bb35d08aa16f7" /></td>
+<td>
+<div id="ans_f4_q1_p3" class="block" style="color:black;display:block">18 octets.</div>
+<div id ="f4_q1_p3_1" style="display:none" data-feedback='["Le padding a bien été identifié."]'>Le padding a bien été identifié.</div>
+<div id ="f4_q1_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f4_q1" id="f4_q1_p4" value="8552f49ae223538cef0f3bc4c82b4eb11a174d9d9392ead09dd00292d6abf24d" /></td>
+<td>
+<div id="ans_f4_q1_p4" class="block" style="color:black;display:block">36 octets.</div>
+<div id ="f4_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p4_0" style="display:none" data-feedback='["Ne confondez pas octets et digits dans la représentation hexadécimale."]'>Ne confondez pas octets et digits dans la représentation hexadécimale.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f4_q1" id="f4_q1_p5" value="bf0158f62f718694d83b68cb70174a17d7572b74325ac59e442708ea025fc3e0" /></td>
+<td>
+<div id="ans_f4_q1_p5" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f4_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p5_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f4_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f4_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f4_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f4_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(5, 4)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(4)" />&nbsp;&nbsp
+<div id="gauge_f4" class="block" style="display:none">
+<canvas id="text_gauge_f4" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f4" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f4" style="display:none">
+<div id="radar_f4" class="block" style="display:none">
+<canvas id="chart_radar_f4" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_5">
+<div id="score_5_5" class="scores" data-blockname="Padding">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 5, 0);"></image>
+<span id="score_5_5_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 5, 1);"></image>
+<span id="score_5_5_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 5, 2);"></image>
+<span id="score_5_5_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 5, 3);"></image>
+<span id="score_5_5_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 5, 3);"></image>
+<span id="score_5_5_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 5, 3);"></image>
+<span id="score_5_5_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_5_5_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_5_5_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 5, 6);"></image>
+<span id="score_5_5_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_5_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_5_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_5_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_5" class="block" style="display:block">
+<form name="quizForm_f5" id="quizForm_f5" style="display:block">
+<div id="f5" data-formname="f5" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[5]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Trame"]'></div>
+<div id="notimeout_f5" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(5, 5)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(5)" />&nbsp;&nbsp
+<strong><span id="cdtime_f5"></span></strong>
+</div>
+<div id="goquiz_f5" style="display:block">
+<div id="question_f5_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_green.gif" height="20"></image>&nbsp;Où se situe le padding dans la trame Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p1" value="a812cca0f136c34ca06c53c1ff38a266126a1995d985e082b844af2e32220910" /></td>
+<td>
+<div id="ans_f5_q1_p1" class="block" style="color:black;display:block">En début de trame Ethernet avant l'entête ?</div>
+<div id ="f5_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p1_0" style="display:none" data-feedback='["On y trouve les adresses à cet emplacement."]'>On y trouve les adresses à cet emplacement.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p2" value="be25aceaa42f0db138e2a22c1ce605d31452c6326ebafdebcffe60122a2f4156" /></td>
+<td>
+<div id="ans_f5_q1_p2" class="block" style="color:black;display:block">Entre l'entête et le payload ?</div>
+<div id ="f5_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p2_0" style="display:none" data-feedback='["Le payload est nécessairement placé après le code de l&rsquo;Ether type."]'>Le payload est nécessairement placé après le code de l&rsquo;Ether type.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p3" value="d4064105b9983caf435429d883249399b9752a14ecb6d7f6c9b41572c4b2c647" /></td>
+<td>
+<div id="ans_f5_q1_p3" class="block" style="color:black;display:block">Entre le payload et le checksum ?</div>
+<div id ="f5_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p4" value="7068d8731ea187caaa3e03a50aaf0baa565026a9ba89f1a22df474d33cd13f63" /></td>
+<td>
+<div id="ans_f5_q1_p4" class="block" style="color:black;display:block">En fin de trame après le checksum ?</div>
+<div id ="f5_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p4_0" style="display:none" data-feedback='["Dans ces conditions, il ne serait plus possible d&rsquo;identifier le checksum implicitement placé en fin de trame."]'>Dans ces conditions, il ne serait plus possible d&rsquo;identifier le checksum implicitement placé en fin de trame.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p5" value="e4d673fdfa1fa3ea3061bb2c97196fa6e2aaf709d63fccd1458c0b0c8461148b" /></td>
+<td>
+<div id="ans_f5_q1_p5" class="block" style="color:black;display:block">Aucun "padding" n'est représenté.</div>
+<div id ="f5_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p5_0" style="display:none" data-feedback='["Les indications vous sont fournies dans l&rsquo;analyse de la trame."]'>Les indications vous sont fournies dans l&rsquo;analyse de la trame.</div>
+</td></tr>
+</table>
+<div id="fok_f5_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f5_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f5_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f5_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(5, 5)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(5)" />&nbsp;&nbsp
+<div id="gauge_f5" class="block" style="display:none">
+<canvas id="text_gauge_f5" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f5" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f5" style="display:none">
+<div id="radar_f5" class="block" style="display:none">
+<canvas id="chart_radar_f5" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_search.png" />
+<span class="iDeviceTitle" style="color:#009900" >Commutation et full duplex&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_6">
+<div id="score_5_6" class="scores" data-blockname="Commutation et full duplex">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 6, 0);"></image>
+<span id="score_5_6_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 6, 1);"></image>
+<span id="score_5_6_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 6, 2);"></image>
+<span id="score_5_6_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 6, 3);"></image>
+<span id="score_5_6_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 6, 3);"></image>
+<span id="score_5_6_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 6, 3);"></image>
+<span id="score_5_6_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_6_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_6_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 6, 6);"></image>
+<span id="score_5_6_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_6_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_6_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_6_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_6" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+L'acheminement des trames Ethernet nécessite de les présenter à tous les postes afin que chacun puisse prendre la décision de les accepter ou non.</br></br>Sans modifier ce mode de fonctionnement CSMA/CD intrinsèque au protocole, la
+<b><span STYLE="font-size:4.5mm;color:#009900"><a onmouseover="nhpup.popup('Par autoapprentissage, les équipements réseaux connaissent la localisation de chaque poste.');">commutation </a></span></b>
+permet d'orienter chaque trame là où se trouve le destinataire et de réduire le trafic inutile.
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_7">
+<div id="score_5_7" class="scores" data-blockname="Commutation et full duplex">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 7, 0);"></image>
+<span id="score_5_7_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 7, 1);"></image>
+<span id="score_5_7_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 7, 2);"></image>
+<span id="score_5_7_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 7, 3);"></image>
+<span id="score_5_7_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 7, 3);"></image>
+<span id="score_5_7_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 7, 3);"></image>
+<span id="score_5_7_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_7_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_7_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 7, 6);"></image>
+<span id="score_5_7_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_7_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_7_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_7_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_7" class="block" style="display:block">
+<div id="actDiv7_0" style="display:block">
+<a onmousedown="Javascript:showDiv(7);">
+<image src="Skin/icon_activity_knowledge_big_green.png"></image>&nbsp;&nbsp;Comment fonctionne la commutation ?</a>
+</div>
+<div id="actDiv7_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(7);">
+<image src="Skin/icon_activity_knowledge_small_green.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment fonctionne la commutation ?</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Hub_switch.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+<nav id="sitenav_8">
+<div id="score_5_8" class="scores" data-blockname="Commutation et full duplex">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 8, 0);"></image>
+<span id="score_5_8_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 8, 1);"></image>
+<span id="score_5_8_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 8, 2);"></image>
+<span id="score_5_8_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 8, 3);"></image>
+<span id="score_5_8_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 8, 3);"></image>
+<span id="score_5_8_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 8, 3);"></image>
+<span id="score_5_8_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_8_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_8_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 8, 6);"></image>
+<span id="score_5_8_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_8_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_8_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_8_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_8" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+</br></br>L'augmentation du trafic est limitée par l'accroissement du nombre de collisions et les retransmissions qui en découlent.</br></br>La commutation associée au mode
+<b><span STYLE="font-size:4.5mm;color:#009900"><a onmouseover="nhpup.popup('Half ou full duplex correspond à un canal de communication unidirectionnel en alternat ou bidirectionnel simultané.');">full duplex </a></span></b>
+permet de supprimer les collisions et d'optimiser le trafic.
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_9">
+<div id="score_5_9" class="scores" data-blockname="Commutation et full duplex">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(5, 9, 0);"></image>
+<span id="score_5_9_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(5, 9, 1);"></image>
+<span id="score_5_9_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(5, 9, 2);"></image>
+<span id="score_5_9_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 9, 3);"></image>
+<span id="score_5_9_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 9, 3);"></image>
+<span id="score_5_9_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(5, 9, 3);"></image>
+<span id="score_5_9_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_5_9_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_5_9_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(5, 9, 6);"></image>
+<span id="score_5_9_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_5_9_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_9_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_5_9_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_9" class="block" style="display:block">
+<div id="actDiv9_0" style="display:block">
+<a onmousedown="Javascript:showDiv(9);">
+<image src="Skin/icon_activity_knowledge_big_green.png"></image>&nbsp;&nbsp;Comment mettre en oeuvre le mode full duplex de bout en bout ?</a>
+</div>
+<div id="actDiv9_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(9);">
+<image src="Skin/icon_activity_knowledge_small_green.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment mettre en oeuvre le mode full duplex de bout en bout ?</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Carte_ethernet_duplex.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_4.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_6.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_notes.png" />
+<span class="iDeviceTitle" color:#009900 >Notes</span></br>
+<div class="iDevice_inner">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<form class="d-flex">
+<input id="searchNote" class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+</form>
+</div>
+</div>
+</nav>
+<div class="container my-3" id="container">
+<div class="card text-dark bg-light mb-3">
+</div>
+<div id="noNotesMatches" class="row container-fluid">
+</div>
+<div id="notesList" class="row container-fluid">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/notes.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

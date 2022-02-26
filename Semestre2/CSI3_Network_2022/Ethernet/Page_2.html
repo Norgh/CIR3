@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Etude du protocole - Protocole Ethernet</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<script type="text/javascript" src="Skin/nhpup.js"></script>
+<script type="text/javascript" src="Skin/know.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<iframe id="inlineFrame" title="Inline Frame" width="258" height="144" src="menu.html"></iframe></br>
+<ul>
+<li><a href="index.html" class="daddy main-node">Protocole Ethernet</a></li>
+<li><a href="Page_1.html" class="no-ch">Histoire</a></li>
+<li id="active"><a class="active no-ch">Etude du protocole</a></li>
+<li><a href="Page_3.html" class="no-ch">Radiographie</a></li>
+<li><a href="Page_4.html" class="no-ch">Trame</a></li>
+<li><a href="Page_5.html" class="no-ch">Gestion des collisions</a></li>
+<li><a href="Page_6.html" class="no-ch">Travaux dirigés</a></li>
+<li><a href="Page_7.html" class="no-ch">Evaluation</a></li>
+<li><a href="Page_8.html" class="no-ch">Définitions</a></li>
+<li><a href="Page_9.html" class="no-ch">Examen</a></li>
+</ul>
+<div class="card-body">
+<div class="form-group">
+<textarea id="addNote" class="form-control" aria-label="With textarea"></textarea>
+</div>
+<button style="height:25px;width:120px;background-color: white" id="addBtn" class="btn btn-outline-primary"><h6 style="color: black; font-size:12px;">Ajouter la note</h6></button>
+</div>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_1.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_3.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Etude du protocole - Protocole Ethernet</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_course.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Cours&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_2_1" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 1, 0);"></image>
+<span id="score_2_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 1, 1);"></image>
+<span id="score_2_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 1, 2);"></image>
+<span id="score_2_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_1_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_1_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 1, 6);"></image>
+<span id="score_2_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<div style="column-width: 400.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_2.jpg"></image></br></br>Le protocole Ethernet s'inspire de quelques principes simples pour gérer la
+<b><span STYLE="font-size:4.5mm;color:#fd7e35"><a onmouseover="nhpup.popup('A quel moment peut-on envoyer un message sans perturber l&rsquo;acheminement des autres ?</br></br>Le mode CSMA/CD, Carrier Sense Multiple Access with Collision Detection (accès multiple avec écoute de porteuse et détection de collision), utilisé par le protocole Ethernet est un principe basé sur la politesse lors de la prise de parole.');">prise de parole </a></span></b>
+et
+<b><span STYLE="font-size:4.5mm;color:#fd7e35"><a onmouseover="nhpup.popup('L&rsquo;identification est réalisée par les adresses Ethernet.');">l'identification </a></span></b>
+des correspondants des messages envoyés.</br></br>En complément, il permet
+<b><span STYLE="font-size:4.5mm;color:#fd7e35"><a onmouseover="nhpup.popup('L&rsquo;intégration de messages se réalise par l&rsquo;encapsulation : un entête renseigne sur ce qu&rsquo;il faut réaliser avec un contenu. C&rsquo;est un principe communément utilisé par tous les protocoles.');">d'intégrer </a></span></b>
+des messages plus élaborés.</br></br><image src="parole.jpg"></image></br></br>Il correspond aux fonctions des
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Elles font référence aux couches n°1 et 2 du modèle OSI.</br></br>Voir chapitre &quot;encapsulation&quot;.');">couches physique et liaison.</a></span></b>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_2">
+<div id="score_2_2" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 2, 0);"></image>
+<span id="score_2_2_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 2, 1);"></image>
+<span id="score_2_2_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 2, 2);"></image>
+<span id="score_2_2_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_2_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_2_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 2, 6);"></image>
+<span id="score_2_2_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_2" class="block" style="display:block">
+<div id="actDiv2_0" style="display:block">
+<a onmousedown="Javascript:showDiv(2);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours vidéo (Présentation du protocole Ethernet)</a>
+</div>
+<div id="actDiv2_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(2);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours vidéo (Présentation du protocole Ethernet)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Course_Ethernet_fr/Course_Ethernet_fr.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+<nav id="sitenav_3">
+<div id="score_2_3" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 3, 0);"></image>
+<span id="score_2_3_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 3, 1);"></image>
+<span id="score_2_3_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 3, 2);"></image>
+<span id="score_2_3_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_3_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_3_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 3, 6);"></image>
+<span id="score_2_3_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_3" class="block" style="display:block">
+<div id="actDiv3_0" style="display:block">
+<a onmousedown="Javascript:showDiv(3);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours pdf (Présentation du protocole Ethernet)</a>
+</div>
+<div id="actDiv3_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(3);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours pdf (Présentation du protocole Ethernet)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="665" src="Course_Ethernet.pdf#view=FitH"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_qcm.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Synthèse&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_4">
+<div id="score_2_4" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 4, 0);"></image>
+<span id="score_2_4_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 4, 1);"></image>
+<span id="score_2_4_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 4, 2);"></image>
+<span id="score_2_4_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_4_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_4_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 4, 6);"></image>
+<span id="score_2_4_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_4" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_6.jpg"></image>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_5">
+<div id="score_2_5" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 5, 0);"></image>
+<span id="score_2_5_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 5, 1);"></image>
+<span id="score_2_5_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 5, 2);"></image>
+<span id="score_2_5_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 5, 3);"></image>
+<span id="score_2_5_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 5, 3);"></image>
+<span id="score_2_5_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 5, 3);"></image>
+<span id="score_2_5_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_5_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_5_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 5, 6);"></image>
+<span id="score_2_5_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_5_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_5_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_5_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_5" class="block" style="display:block">
+<form name="quizForm_f5" id="quizForm_f5" style="display:block">
+<div id="f5" data-formname="f5" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[4]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Acheminement", "Type adresse"]'></div>
+<div id="notimeout_f5" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 5)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(5)" />&nbsp;&nbsp
+<strong><span id="cdtime_f5"></span></strong>
+</div>
+<div id="goquiz_f5" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/3.mp3', 'Question_Ethernet_fr/Image/Diapositive3.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f5_q1" class="block" style="display:block" data-questionskill="[1, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quels postes connectés à un réseau Ethernet vont recevoir et décoder une trame unicast émise par l'un d'eux ? </b>
+<table>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p1" value="a812cca0f136c34ca06c53c1ff38a266126a1995d985e082b844af2e32220910" /></td>
+<td>
+<div id="ans_f5_q1_p1" class="block" style="color:black;display:block">Aucun poste.</div>
+<div id ="f5_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p1_0" style="display:none" data-feedback='["La remise d&rsquo;un message nécessite de le présenter à chacun des postes afin de permettre aux trois types d&rsquo;adressage (unicast, multicast et broadcast) de fonctionner sur le même principe."]'>La remise d&rsquo;un message nécessite de le présenter à chacun des postes afin de permettre aux trois types d&rsquo;adressage (unicast, multicast et broadcast) de fonctionner sur le même principe.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p2" value="be25aceaa42f0db138e2a22c1ce605d31452c6326ebafdebcffe60122a2f4156" /></td>
+<td>
+<div id="ans_f5_q1_p2" class="block" style="color:black;display:block">Un seul poste.</div>
+<div id ="f5_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p2_0" style="display:none" data-feedback='["Comment la trame unicast pourrait identifier l&rsquo;itinéraire à emprunter pour uniquement atteindre le poste destinataire ?"]'>Comment la trame unicast pourrait identifier l&rsquo;itinéraire à emprunter pour uniquement atteindre le poste destinataire ?</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p3" value="f9e9da2bc2586d0fd75ea45c4db5163f7a1d0a1c4ad0604287f7bd3c1d363ece" /></td>
+<td>
+<div id="ans_f5_q1_p3" class="block" style="color:black;display:block">Plusieurs postes.</div>
+<div id ="f5_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p3_0" style="display:none" data-feedback='["Comment la trame pourrait sélectionner quelques postes parmi lesquels l&rsquo;un d&rsquo;eux serait le destinataire ?"]'>Comment la trame pourrait sélectionner quelques postes parmi lesquels l&rsquo;un d&rsquo;eux serait le destinataire ?</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p4" value="83e37e1b9b8c69836619dca65d3ca6afa65919b858932a0f0fcf57a32e2f1dd0" /></td>
+<td>
+<div id="ans_f5_q1_p4" class="block" style="color:black;display:block">Tous les postes.</div>
+<div id ="f5_q1_p4_1" style="display:none" data-feedback='["Pour transmettre un message en unicast, c&rsquo;est à dire adressé à un seul poste, l&rsquo;identification du destinataire est réalisée à la réception au niveau de chacun des postes connectés au réseau local Ethernet."]'>Pour transmettre un message en unicast, c&rsquo;est à dire adressé à un seul poste, l&rsquo;identification du destinataire est réalisée à la réception au niveau de chacun des postes connectés au réseau local Ethernet.</div>
+<div id ="f5_q1_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f5_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f5_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f5_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f5_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 5)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(5)" />&nbsp;&nbsp
+<div id="gauge_f5" class="block" style="display:none">
+<canvas id="text_gauge_f5" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f5" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f5" style="display:none">
+<div id="radar_f5" class="block" style="display:none">
+<canvas id="chart_radar_f5" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_6">
+<div id="score_2_6" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 6, 0);"></image>
+<span id="score_2_6_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 6, 1);"></image>
+<span id="score_2_6_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 6, 2);"></image>
+<span id="score_2_6_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 6, 3);"></image>
+<span id="score_2_6_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 6, 3);"></image>
+<span id="score_2_6_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 6, 3);"></image>
+<span id="score_2_6_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_6_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_6_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 6, 6);"></image>
+<span id="score_2_6_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_6_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_6_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_6_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_6" class="block" style="display:block">
+<form name="quizForm_f6" id="quizForm_f6" style="display:block">
+<div id="f6" data-formname="f6" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[4]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage", "Type adresse"]'></div>
+<div id="notimeout_f6" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 6)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(6)" />&nbsp;&nbsp
+<strong><span id="cdtime_f6"></span></strong>
+</div>
+<div id="goquiz_f6" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/13.mp3', 'Question_Ethernet_fr/Image/Diapositive13.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f6_q1" class="block" style="display:block" data-questionskill="[1, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quel type d'adressage ne conviendrait pas pour adresser un message à plusieurs postes en envoyant qu'un seul exemplaire d'une trame Ethernet sur un réseau local ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p1" value="56e32820ca805be33aea1e041f1458c662d62c71d81f973174f4e4889f1f8c58" /></td>
+<td>
+<div id="ans_f6_q1_p1" class="block" style="color:black;display:block">Adressage unicast.</div>
+<div id ="f6_q1_p1_1" style="display:none" data-feedback='["L&rsquo;unicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique qu&rsquo;un seul poste acceptera.</br></br>L&rsquo;unicast ne permettra de solliciter qu&rsquo;une seule adresse Ethernet. Etant donné que tous les postes d&rsquo;un réseau local disposent de cartes réseaux dont les identifiants (adresses) sont tous différents, un seul poste acceptera la trame."]'>L&rsquo;unicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique qu&rsquo;un seul poste acceptera.</br></br>L&rsquo;unicast ne permettra de solliciter qu&rsquo;une seule adresse Ethernet. Etant donné que tous les postes d&rsquo;un réseau local disposent de cartes réseaux dont les identifiants (adresses) sont tous différents, un seul poste acceptera la trame.</div>
+<div id ="f6_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p2" value="3cb66d5bfb3d324e2ee7fff48eaa700ad6c0c0027443090972283d34cda58dcc" /></td>
+<td>
+<div id="ans_f6_q1_p2" class="block" style="color:black;display:block">Adressage multicast.</div>
+<div id ="f6_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p2_0" style="display:none" data-feedback='["Le multicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que chaque poste pourra accepter sélectivement selon ses besoins."]'>Le multicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que chaque poste pourra accepter sélectivement selon ses besoins.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p3" value="228a424e1ccdfb52ee07be05e2a7036d34fb361c9217967282a6385a190b3bc5" /></td>
+<td>
+<div id="ans_f6_q1_p3" class="block" style="color:black;display:block">Adressage broadcast.</div>
+<div id ="f6_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p3_0" style="display:none" data-feedback='["Le broadcast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que tous les postes accepteront par convention."]'>Le broadcast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que tous les postes accepteront par convention.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p4" value="2cee3d77cfe3def36a606366a76ae4723cd24ccb788fdb5bb83ecc85828aaded" /></td>
+<td>
+<div id="ans_f6_q1_p4" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f6_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f6_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f6_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f6_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f6_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 6)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(6)" />&nbsp;&nbsp
+<div id="gauge_f6" class="block" style="display:none">
+<canvas id="text_gauge_f6" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f6" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f6" style="display:none">
+<div id="radar_f6" class="block" style="display:none">
+<canvas id="chart_radar_f6" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_7">
+<div id="score_2_7" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 7, 0);"></image>
+<span id="score_2_7_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 7, 1);"></image>
+<span id="score_2_7_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 7, 2);"></image>
+<span id="score_2_7_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 7, 3);"></image>
+<span id="score_2_7_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 7, 3);"></image>
+<span id="score_2_7_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 7, 3);"></image>
+<span id="score_2_7_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_7_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_7_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 7, 6);"></image>
+<span id="score_2_7_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_7_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_7_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_7_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_7" class="block" style="display:block">
+<form name="quizForm_f7" id="quizForm_f7" style="display:block">
+<div id="f7" data-formname="f7" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[5]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage"]'></div>
+<div id="notimeout_f7" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 7)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(7)" />&nbsp;&nbsp
+<strong><span id="cdtime_f7"></span></strong>
+</div>
+<div id="goquiz_f7" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/10.mp3', 'Question_Ethernet_fr/Image/Diapositive10.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f7_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Que se passe-t-il sur un réseau local si aucun poste n'a l'adresse Ethernet correspondant à celle utilisée comme adresse destinataire d'une trame Ethernet envoyée ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f7_q1" id="f7_q1_p1" value="42bab576a0835dc7605c4f389a0701d76daeb8a8cfd8aa05612d8336aebb72c9" /></td>
+<td>
+<div id="ans_f7_q1_p1" class="block" style="color:black;display:block">Un message d'erreur est renvoyé au poste qui a émis la trame.</div>
+<div id ="f7_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p1_0" style="display:none" data-feedback='["Aucun composant du réseau n&rsquo;est responsable de la gestion des trames."]'>Aucun composant du réseau n&rsquo;est responsable de la gestion des trames.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f7_q1" id="f7_q1_p2" value="b5d44ddf9df4a295820c78ac13e7d4c1b9c017d10c54e3c3332b2a9f4bdfd980" /></td>
+<td>
+<div id="ans_f7_q1_p2" class="block" style="color:black;display:block">Le protocole Ethernet lié au poste qui a émis la trame la renvoie jusqu'à obtenir une réponse.</div>
+<div id ="f7_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p2_0" style="display:none" data-feedback='["Le protocole Ethernet définit un mode de fonctionnement, il n&rsquo;est pas un composant du réseau responsable de la gestion des trames."]'>Le protocole Ethernet définit un mode de fonctionnement, il n&rsquo;est pas un composant du réseau responsable de la gestion des trames.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f7_q1" id="f7_q1_p3" value="b4e19de7616622cb2970150346f1987d1023dc6fb4110f26794e58ee83808842" /></td>
+<td>
+<div id="ans_f7_q1_p3" class="block" style="color:black;display:block">La trame circule sur le réseau jusqu'à ce qu'un poste accepte de la recevoir.</div>
+<div id ="f7_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p3_0" style="display:none" data-feedback='["Ce cas de figure conduirait à une congestion du réseau local avec des trames obsolètes."]'>Ce cas de figure conduirait à une congestion du réseau local avec des trames obsolètes.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f7_q1" id="f7_q1_p4" value="e0999268ea89eddaba56db6faa82afd41ea072eb1c6ada13326fcef14977243e" /></td>
+<td>
+<div id="ans_f7_q1_p4" class="block" style="color:black;display:block">La trame est abandonnée sans aucune suite.</div>
+<div id ="f7_q1_p4_1" style="display:none" data-feedback='["Chaque poste étant indépendant, si le destinataire n&rsquo;est pas présent sur le réseau local, le poste source n&rsquo;en est pas averti."]'>Chaque poste étant indépendant, si le destinataire n&rsquo;est pas présent sur le réseau local, le poste source n&rsquo;en est pas averti.</div>
+<div id ="f7_q1_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f7_q1" id="f7_q1_p5" value="c775681c10c645938cd3056cadd75cf5a27a9b72824e0a99c15020c7f143b942" /></td>
+<td>
+<div id="ans_f7_q1_p5" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f7_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p5_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f7_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f7_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f7_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f7_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 7)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(7)" />&nbsp;&nbsp
+<div id="gauge_f7" class="block" style="display:none">
+<canvas id="text_gauge_f7" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f7" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f7" style="display:none">
+<div id="radar_f7" class="block" style="display:none">
+<canvas id="chart_radar_f7" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_8">
+<div id="score_2_8" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 8, 0);"></image>
+<span id="score_2_8_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 8, 1);"></image>
+<span id="score_2_8_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 8, 2);"></image>
+<span id="score_2_8_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 8, 3);"></image>
+<span id="score_2_8_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 8, 3);"></image>
+<span id="score_2_8_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 8, 3);"></image>
+<span id="score_2_8_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_8_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_8_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 8, 6);"></image>
+<span id="score_2_8_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_8_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_8_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_8_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_8" class="block" style="display:block">
+<form name="quizForm_f8" id="quizForm_f8" style="display:block">
+<div id="f8" data-formname="f8" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[2]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage"]'></div>
+<div id="notimeout_f8" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 8)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(8)" />&nbsp;&nbsp
+<strong><span id="cdtime_f8"></span></strong>
+</div>
+<div id="goquiz_f8" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/14.mp3', 'Question_Ethernet_fr/Image/Diapositive14.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f8_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Est-ce qu'un poste source doit connaitre préalablement l'adresse Ethernet du destinataire avant d'émettre la trame destinée à transporter le message ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p1" value="e60207ace086ae5103dbdaea8bb94aca7d9140d3b02b6d8507b3d82d5dd35970" /></td>
+<td>
+<div id="ans_f8_q1_p1" class="block" style="color:black;display:block">Oui.</div>
+<div id ="f8_q1_p1_1" style="display:none" data-feedback='["L&rsquo;utilisation d&rsquo;une adresse broadcast pourrait convenir, mais tous les postes accepteraient la trame, ce qui n&rsquo;est probablement pas l&rsquo;objectif."]'>L&rsquo;utilisation d&rsquo;une adresse broadcast pourrait convenir, mais tous les postes accepteraient la trame, ce qui n&rsquo;est probablement pas l&rsquo;objectif.</div>
+<div id ="f8_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p2" value="7e2f25f8dbf2a4c100e64504b913e05fc80ef88f4e09d6baa172b6ea64d83958" /></td>
+<td>
+<div id="ans_f8_q1_p2" class="block" style="color:black;display:block">Non.</div>
+<div id ="f8_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f8_q1_p2_0" style="display:none" data-feedback='["Il est indispensable d&rsquo;indiquer l&rsquo;adresse du poste de destination afin que celui-ci accepte la trame qui lui est présentée."]'>Il est indispensable d&rsquo;indiquer l&rsquo;adresse du poste de destination afin que celui-ci accepte la trame qui lui est présentée.</div>
+</td></tr>
+</table>
+<div id="fok_f8_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f8_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f8_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f8_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 8)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(8)" />&nbsp;&nbsp
+<div id="gauge_f8" class="block" style="display:none">
+<canvas id="text_gauge_f8" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f8" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f8" style="display:none">
+<div id="radar_f8" class="block" style="display:none">
+<canvas id="chart_radar_f8" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_1.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_3.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_notes.png" />
+<span class="iDeviceTitle" color:#009900 >Notes</span></br>
+<div class="iDevice_inner">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<form class="d-flex">
+<input id="searchNote" class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+</form>
+</div>
+</div>
+</nav>
+<div class="container my-3" id="container">
+<div class="card text-dark bg-light mb-3">
+</div>
+<div id="noNotesMatches" class="row container-fluid">
+</div>
+<div id="notesList" class="row container-fluid">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/notes.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Consultation des tables - Routage entre réseaux</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<script type="text/javascript" src="Skin/nhpup.js"></script>
+<script type="text/javascript" src="Skin/know.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<iframe id="inlineFrame" title="Inline Frame" width="258" height="144" src="menu.html"></iframe></br>
+<ul>
+<li><a href="index.html" class="daddy main-node">Routage entre réseaux</a></li>
+<li><a href="Page_1.html" class="no-ch">Choisir un itinéraire</a></li>
+<li><a href="Page_2.html" class="no-ch">Principe du routage</a></li>
+<li id="active"><a class="active no-ch">Consultation des tables</a></li>
+<li><a href="Page_4.html" class="no-ch">Travaux dirigés</a></li>
+<li><a href="Page_5.html" class="no-ch">Evaluation</a></li>
+<li><a href="Page_6.html" class="no-ch">Définitions</a></li>
+<li><a href="Page_7.html" class="no-ch">Examen</a></li>
+</ul>
+<div class="card-body">
+<div class="form-group">
+<textarea id="addNote" class="form-control" aria-label="With textarea"></textarea>
+</div>
+<button style="height:25px;width:120px;background-color: white" id="addBtn" class="btn btn-outline-primary"><h6 style="color: black; font-size:12px;">Ajouter la note</h6></button>
+</div>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_2.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_4.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Consultation des tables - Routage entre réseaux</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_course.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Cours&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_3_1" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 1, 0);"></image>
+<span id="score_3_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 1, 1);"></image>
+<span id="score_3_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 1, 2);"></image>
+<span id="score_3_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 1, 3);"></image>
+<span id="score_3_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 1, 3);"></image>
+<span id="score_3_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 1, 3);"></image>
+<span id="score_3_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_1_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_1_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 1, 6);"></image>
+<span id="score_3_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<div style="column-width: 400.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_2.jpg"></image> </br></br>Aux informations associées au routage local, de nouvelles entrées vont être ajoutées dans les tables afin d'identifier les réseaux situés après un ou plusieurs routeurs et sur lesquels
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('Un réseau local associé à une classe IP ne peut être accédé s&rsquo;il n&rsquo;est pas déclaré dans les tables de routage des équipements qui le séparent des autres réseaux locaux.');">d'autres classes IP </a></span></b>
+ont été attribuées.</br></br><image src="routage_2.jpg"></image></br></br>Etudions comment les itinéraires vont être empruntés.</br>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_2">
+<div id="score_3_2" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 2, 0);"></image>
+<span id="score_3_2_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 2, 1);"></image>
+<span id="score_3_2_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 2, 2);"></image>
+<span id="score_3_2_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 2, 3);"></image>
+<span id="score_3_2_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 2, 3);"></image>
+<span id="score_3_2_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 2, 3);"></image>
+<span id="score_3_2_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_2_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_2_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 2, 6);"></image>
+<span id="score_3_2_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_2_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_2_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_2_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_2" class="block" style="display:block">
+<div id="actDiv2_0" style="display:block">
+<a onmousedown="Javascript:showDiv(2);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours vidéo (Consultation des tables de routage IP - 2)</a>
+</div>
+<div id="actDiv2_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(2);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours vidéo (Consultation des tables de routage IP - 2)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Course_IP_routing_table_2_fr/Course_IP_routing_table_2_fr.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+<nav id="sitenav_3">
+<div id="score_3_3" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 3, 0);"></image>
+<span id="score_3_3_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 3, 1);"></image>
+<span id="score_3_3_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 3, 2);"></image>
+<span id="score_3_3_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 3, 3);"></image>
+<span id="score_3_3_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 3, 3);"></image>
+<span id="score_3_3_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 3, 3);"></image>
+<span id="score_3_3_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_3_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_3_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 3, 6);"></image>
+<span id="score_3_3_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_3_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_3_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_3_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_3" class="block" style="display:block">
+<div id="actDiv3_0" style="display:block">
+<a onmousedown="Javascript:showDiv(3);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours pdf (Consultation des tables de routage IP - 2)</a>
+</div>
+<div id="actDiv3_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(3);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours pdf (Consultation des tables de routage IP - 2)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="665" src="Course_IP_routing_table_2.pdf#view=FitH"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_course.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Cours&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_4">
+<div id="score_3_4" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 4, 0);"></image>
+<span id="score_3_4_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 4, 1);"></image>
+<span id="score_3_4_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 4, 2);"></image>
+<span id="score_3_4_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 4, 3);"></image>
+<span id="score_3_4_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 4, 3);"></image>
+<span id="score_3_4_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 4, 3);"></image>
+<span id="score_3_4_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_4_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_4_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 4, 6);"></image>
+<span id="score_3_4_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_4_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_4_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_4_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_4" class="block" style="display:block">
+<div style="column-width: 400.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_2.jpg"></image> </br></br>Lorsqu'il s'agit d'intégrer tous les réseaux mondiaux, il devient fastidieux et
+<b><span STYLE="font-size:4.5mm;color:#DD0000"><a onmouseover="nhpup.popup('La consultation d&rsquo;une table de routage s&rsquo;effectue à chaque envoi de datagramme. Plus le nombre de destinations augmente, plus le temps de consultation sera long.');">inefficace </a></span></b>
+de les décrire un par un dans les tables de routage.</br></br>Les entrées seront factorisées par un
+<b><span STYLE="font-size:4.5mm;color:#fd7e35"><a onmouseover="nhpup.popup('La modification de la valeur d&rsquo;un masque dans une table de routage permet d&rsquo;ajuster la couverture d&rsquo;une déclaration, ce qui conduit à une réduction du nombre de lignes nécessaires.');">regroupement </a></span></b>
+approprié fonction des mêmes grandes directions en passant par un itinéraire de proximité, charge ensuite d'affiner la description en se rapprochant de la destination.</br></br><image src="directions.jpg"></image></br></br>Le principe de base est conservé et s'enrichit de simplifications en fonction de la position de chaque réseau.</br></br><image src="routage_3.jpg"></image></br></br>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_5">
+<div id="score_3_5" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 5, 0);"></image>
+<span id="score_3_5_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 5, 1);"></image>
+<span id="score_3_5_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 5, 2);"></image>
+<span id="score_3_5_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 5, 3);"></image>
+<span id="score_3_5_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 5, 3);"></image>
+<span id="score_3_5_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 5, 3);"></image>
+<span id="score_3_5_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_5_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_5_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 5, 6);"></image>
+<span id="score_3_5_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_5_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_5_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_5_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_5" class="block" style="display:block">
+<div id="actDiv5_0" style="display:block">
+<a onmousedown="Javascript:showDiv(5);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours vidéo (Consultation des tables de routage IP - 3)</a>
+</div>
+<div id="actDiv5_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(5);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours vidéo (Consultation des tables de routage IP - 3)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Course_IP_routing_table_3_fr/Course_IP_routing_table_3_fr.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+<nav id="sitenav_6">
+<div id="score_3_6" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 6, 0);"></image>
+<span id="score_3_6_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 6, 1);"></image>
+<span id="score_3_6_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 6, 2);"></image>
+<span id="score_3_6_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 6, 3);"></image>
+<span id="score_3_6_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 6, 3);"></image>
+<span id="score_3_6_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 6, 3);"></image>
+<span id="score_3_6_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_6_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_6_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 6, 6);"></image>
+<span id="score_3_6_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_6_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_6_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_6_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_6" class="block" style="display:block">
+<div id="actDiv6_0" style="display:block">
+<a onmousedown="Javascript:showDiv(6);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours pdf (Consultation des tables de routage IP - 3)</a>
+</div>
+<div id="actDiv6_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(6);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours pdf (Consultation des tables de routage IP - 3)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="665" src="Course_IP_routing_table_3.pdf#view=FitH"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_qcm.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Synthèse&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_7">
+<div id="score_3_7" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 7, 0);"></image>
+<span id="score_3_7_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 7, 1);"></image>
+<span id="score_3_7_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 7, 2);"></image>
+<span id="score_3_7_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 7, 3);"></image>
+<span id="score_3_7_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 7, 3);"></image>
+<span id="score_3_7_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 7, 3);"></image>
+<span id="score_3_7_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_3_7_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_3_7_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 7, 6);"></image>
+<span id="score_3_7_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_7_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_7_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_7_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_7" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_6.jpg"></image>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_8">
+<div id="score_3_8" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(3, 8, 0);"></image>
+<span id="score_3_8_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(3, 8, 1);"></image>
+<span id="score_3_8_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(3, 8, 2);"></image>
+<span id="score_3_8_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 8, 3);"></image>
+<span id="score_3_8_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 8, 3);"></image>
+<span id="score_3_8_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(3, 8, 3);"></image>
+<span id="score_3_8_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_3_8_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_3_8_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(3, 8, 6);"></image>
+<span id="score_3_8_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_3_8_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_8_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_3_8_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_8" class="block" style="display:block">
+<form name="quizForm_f8" id="quizForm_f8" style="display:block">
+<div id="f8" data-formname="f8" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[4]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Fonctions de routage"]'></div>
+<div id="notimeout_f8" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(3, 8)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(8)" />&nbsp;&nbsp
+<strong><span id="cdtime_f8"></span></strong>
+</div>
+<div id="goquiz_f8" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_text(30, 0, 400, 'Indice', 'L&rsquo;objectif est d&rsquo;identifier la ligne qui correspond le mieux à l&rsquo;adresse de destination.');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f8_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Qu'elle est la première action réalisée lors d'une opération de routage ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p1" value="4629ba1116602eaa10c7c6f5dc9d822a29d7892f0f432fa18011970cd9b285cf" /></td>
+<td>
+<div id="ans_f8_q1_p1" class="block" style="color:black;display:block">Comparer l'adresse de destination avec le contenu de la colonne "destination".</div>
+<div id ="f8_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f8_q1_p1_0" style="display:none" data-feedback='["Il faut d&rsquo;abord identifier si l&rsquo;adresse de destination correspond à l&rsquo;un des préfixes de la table de routage."]'>Il faut d&rsquo;abord identifier si l&rsquo;adresse de destination correspond à l&rsquo;un des préfixes de la table de routage.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p2" value="ec7ee893e1afbecf78a9acfe4ca79420a7f98d94b8ce16be22cc0f316d915ad0" /></td>
+<td>
+<div id="ans_f8_q1_p2" class="block" style="color:black;display:block">Masquer l'adresse de destination avec le contenu de la colonne "masque".</div>
+<div id ="f8_q1_p2_1" style="display:none" data-feedback='["Il faut d&rsquo;abord identifier si l&rsquo;adresse de destination correspond à l&rsquo;un des préfixes de la table de routage."]'>Il faut d&rsquo;abord identifier si l&rsquo;adresse de destination correspond à l&rsquo;un des préfixes de la table de routage.</div>
+<div id ="f8_q1_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p3" value="d8242ad545bf58e62530dffd0d4d5e0a46ccac424b176cc4bf6989330e8518b4" /></td>
+<td>
+<div id="ans_f8_q1_p3" class="block" style="color:black;display:block">Comparer l'adresse de destination avec le contenu de la colonne "passerelle".</div>
+<div id ="f8_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f8_q1_p3_0" style="display:none" data-feedback='["Il faut d&rsquo;abord identifier si l&rsquo;adresse de destination correspond à l&rsquo;un des préfixes de la table de routage."]'>Il faut d&rsquo;abord identifier si l&rsquo;adresse de destination correspond à l&rsquo;un des préfixes de la table de routage.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p4" value="4687e7c11c551a9f4d5cbeedcbab57a88f1ebe38b0cec9ed0c182e53456f55a6" /></td>
+<td>
+<div id="ans_f8_q1_p4" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f8_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f8_q1_p4_0" style="display:none" data-feedback='["Reprenez le ménanisme d&rsquo;utilisation d&rsquo;une table de routage."]'>Reprenez le ménanisme d&rsquo;utilisation d&rsquo;une table de routage.</div>
+</td></tr>
+</table>
+<div id="fok_f8_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f8_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f8_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f8_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(3, 8)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(8)" />&nbsp;&nbsp
+<div id="gauge_f8" class="block" style="display:none">
+<canvas id="text_gauge_f8" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f8" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f8" style="display:none">
+<div id="radar_f8" class="block" style="display:none">
+<canvas id="chart_radar_f8" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_2.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_4.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_notes.png" />
+<span class="iDeviceTitle" color:#009900 >Notes</span></br>
+<div class="iDevice_inner">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<form class="d-flex">
+<input id="searchNote" class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+</form>
+</div>
+</div>
+</nav>
+<div class="container my-3" id="container">
+<div class="card text-dark bg-light mb-3">
+</div>
+<div id="noNotesMatches" class="row container-fluid">
+</div>
+<div id="notesList" class="row container-fluid">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/notes.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

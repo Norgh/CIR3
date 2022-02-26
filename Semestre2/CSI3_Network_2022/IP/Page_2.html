@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Adressage IP - Protocole IP</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<script type="text/javascript" src="Skin/nhpup.js"></script>
+<script type="text/javascript" src="Skin/know.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<iframe id="inlineFrame" title="Inline Frame" width="258" height="144" src="menu.html"></iframe></br>
+<ul>
+<li><a href="index.html" class="daddy main-node">Protocole IP</a></li>
+<li><a href="Page_1.html" class="no-ch">Usages</a></li>
+<li id="active"><a class="active no-ch">Adressage IP</a></li>
+<li><a href="Page_3.html" class="no-ch">Echange</a></li>
+<li><a href="Page_4.html" class="no-ch">Interface</a></li>
+<li><a href="Page_5.html" class="no-ch">Routage local</a></li>
+<li><a href="Page_6.html" class="no-ch">Travaux dirigés</a></li>
+<li><a href="Page_7.html" class="no-ch">Deux adressages</a></li>
+<li><a href="Page_8.html" class="no-ch">Evaluation</a></li>
+<li><a href="Page_9.html" class="no-ch">Définitions</a></li>
+<li><a href="Page_10.html" class="no-ch">Examen</a></li>
+</ul>
+<div class="card-body">
+<div class="form-group">
+<textarea id="addNote" class="form-control" aria-label="With textarea"></textarea>
+</div>
+<button style="height:25px;width:120px;background-color: white" id="addBtn" class="btn btn-outline-primary"><h6 style="color: black; font-size:12px;">Ajouter la note</h6></button>
+</div>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_1.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_3.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Adressage IP - Protocole IP</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_course.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Cours&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_2_1" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 1, 0);"></image>
+<span id="score_2_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 1, 1);"></image>
+<span id="score_2_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 1, 2);"></image>
+<span id="score_2_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_1_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_1_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 1, 6);"></image>
+<span id="score_2_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<div style="column-width: 400.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_2.jpg"></image> </br></br>Le protocole IP ajoute un niveau d'adressage supplémentaire destiné à gérer l'unicité d'une adresse dans un standard mondial.</br></br><image src="adressage.jpg"></image></br></br>Pour cela,
+<b><span STYLE="font-size:4.5mm"><a href="https://www.icann.org/fr/history" target="_blank" style="color:#009900" >l'ICANN,</a></span></b>
+organisme international, gère l'allocation des adresses du protocole IP.</br></br>Dans ce cours, le protocole IP est abordé dans sa version 4. Cette version initialement conçue pour fédérer toutes les ressources s'est avérée limitée par son champ d'adressage sur quatre octets.</br></br>Ce protocole reste cependant toujours d'actualité.</br>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_2">
+<div id="score_2_2" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 2, 0);"></image>
+<span id="score_2_2_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 2, 1);"></image>
+<span id="score_2_2_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 2, 2);"></image>
+<span id="score_2_2_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_2_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_2_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 2, 6);"></image>
+<span id="score_2_2_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_2" class="block" style="display:block">
+<div id="actDiv2_0" style="display:block">
+<a onmousedown="Javascript:showDiv(2);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours vidéo (Présentation du protocole IP)</a>
+</div>
+<div id="actDiv2_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(2);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours vidéo (Présentation du protocole IP)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="550" src="Course_IP_fr/Course_IP_fr.html"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+<nav id="sitenav_3">
+<div id="score_2_3" class="scores" data-blockname="Cours">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 3, 0);"></image>
+<span id="score_2_3_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 3, 1);"></image>
+<span id="score_2_3_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 3, 2);"></image>
+<span id="score_2_3_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_3_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_3_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 3, 6);"></image>
+<span id="score_2_3_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_3" class="block" style="display:block">
+<div id="actDiv3_0" style="display:block">
+<a onmousedown="Javascript:showDiv(3);">
+<image src="Skin/icon_activity_knowledge_big_red.png"></image>&nbsp;&nbsp;Support de cours pdf (Présentation du protocole IP)</a>
+</div>
+<div id="actDiv3_1" style="display:none">
+<a onmousedown="Javascript:hideDiv(3);">
+<image src="Skin/icon_activity_knowledge_small_red.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support de cours pdf (Présentation du protocole IP)</a>
+<div class="embed-responsive embed-responsive-1by1">
+<iframe id="inlineFrame" title="Inline Frame" width="800" height="665" src="Course_IP.pdf#view=FitH"> </iframe>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_qcm.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Synthèse&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_4">
+<div id="score_2_4" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 4, 0);"></image>
+<span id="score_2_4_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 4, 1);"></image>
+<span id="score_2_4_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 4, 2);"></image>
+<span id="score_2_4_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_4_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_4_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 4, 6);"></image>
+<span id="score_2_4_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_4" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+<image src="Skin/Support_cours_6.jpg"></image>
+</div>
+</br>
+</div>
+</nav>
+<nav id="sitenav_5">
+<div id="score_2_5" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 5, 0);"></image>
+<span id="score_2_5_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 5, 1);"></image>
+<span id="score_2_5_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 5, 2);"></image>
+<span id="score_2_5_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 5, 3);"></image>
+<span id="score_2_5_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 5, 3);"></image>
+<span id="score_2_5_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 5, 3);"></image>
+<span id="score_2_5_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_5_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_5_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 5, 6);"></image>
+<span id="score_2_5_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_5_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_5_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_5_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_5" class="block" style="display:block">
+<form name="quizForm_f5" id="quizForm_f5" style="display:block">
+<div id="f5" data-formname="f5" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[4]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage", "Trame"]'></div>
+<div id="notimeout_f5" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 5)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(5)" />&nbsp;&nbsp
+<strong><span id="cdtime_f5"></span></strong>
+</div>
+<div id="goquiz_f5" style="display:block">
+<div id="question_f5_q1" class="block" style="display:block" data-questionskill="[1, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quelle information trouve-t-on dans l'entête d'un datagramme IP en sortant de l'interface réseau d'un poste de travail ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p1" value="a812cca0f136c34ca06c53c1ff38a266126a1995d985e082b844af2e32220910" /></td>
+<td>
+<div id="ans_f5_q1_p1" class="block" style="color:black;display:block">Masque de l'adresse IP du réseau source.</div>
+<div id ="f5_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p1_0" style="display:none" data-feedback='["Le masque du réseau source permet d&rsquo;identifier la route à emprunter."]'>Le masque du réseau source permet d&rsquo;identifier la route à emprunter.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p2" value="e2a63e60de36cd53931d8f218bc018f089b7342a2ca8b9f29e6dc84b973425d0" /></td>
+<td>
+<div id="ans_f5_q1_p2" class="block" style="color:black;display:block">Adresse IP du poste de destination.</div>
+<div id ="f5_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p3" value="f9e9da2bc2586d0fd75ea45c4db5163f7a1d0a1c4ad0604287f7bd3c1d363ece" /></td>
+<td>
+<div id="ans_f5_q1_p3" class="block" style="color:black;display:block">Masque de l'adresse IP du réseau de destination.</div>
+<div id ="f5_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p3_0" style="display:none" data-feedback='["Le masque du réseau de destination est inconnu de l&rsquo;expéditeur."]'>Le masque du réseau de destination est inconnu de l&rsquo;expéditeur.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f5_q1" id="f5_q1_p4" value="7068d8731ea187caaa3e03a50aaf0baa565026a9ba89f1a22df474d33cd13f63" /></td>
+<td>
+<div id="ans_f5_q1_p4" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f5_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f5_q1_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f5_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f5_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f5_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f5_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 5)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(5)" />&nbsp;&nbsp
+<div id="gauge_f5" class="block" style="display:none">
+<canvas id="text_gauge_f5" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f5" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f5" style="display:none">
+<div id="radar_f5" class="block" style="display:none">
+<canvas id="chart_radar_f5" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_6">
+<div id="score_2_6" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 6, 0);"></image>
+<span id="score_2_6_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 6, 1);"></image>
+<span id="score_2_6_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 6, 2);"></image>
+<span id="score_2_6_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 6, 3);"></image>
+<span id="score_2_6_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 6, 3);"></image>
+<span id="score_2_6_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 6, 3);"></image>
+<span id="score_2_6_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_6_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_6_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 6, 6);"></image>
+<span id="score_2_6_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_6_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_6_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_6_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_6" class="block" style="display:block">
+<form name="quizForm_f6" id="quizForm_f6" style="display:block">
+<div id="f6" data-formname="f6" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[5]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage"]'></div>
+<div id="notimeout_f6" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 6)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(6)" />&nbsp;&nbsp
+<strong><span id="cdtime_f6"></span></strong>
+</div>
+<div id="goquiz_f6" style="display:block">
+<div id="question_f6_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Qu'est-ce que détermine la partie du masque d'une adresse IP dont les bits sont à 1 ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p1" value="8741e5a268c57b1e16ba52d298b07a7af1f665942993d5fd9b51d96b420cb978" /></td>
+<td>
+<div id="ans_f6_q1_p1" class="block" style="color:black;display:block">Désigne la partie de l'adresse correspondant aux postes de travail.</div>
+<div id ="f6_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p1_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p2" value="77a485bf38677d4d559892ce21d5150c9dc9b12e30cdb5d7d780758bed1654ed" /></td>
+<td>
+<div id="ans_f6_q1_p2" class="block" style="color:black;display:block">Désigne la partie de l'adresse correspondant au préfixe du réseau.</div>
+<div id ="f6_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p3" value="228a424e1ccdfb52ee07be05e2a7036d34fb361c9217967282a6385a190b3bc5" /></td>
+<td>
+<div id="ans_f6_q1_p3" class="block" style="color:black;display:block">Détermine si l'adresse est de type multicast.</div>
+<div id ="f6_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p3_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p4" value="2cee3d77cfe3def36a606366a76ae4723cd24ccb788fdb5bb83ecc85828aaded" /></td>
+<td>
+<div id="ans_f6_q1_p4" class="block" style="color:black;display:block">Détermine si l'adresse est de type privé.</div>
+<div id ="f6_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f6_q1" id="f6_q1_p5" value="8fa681c2d6d1f9cdd8ac42e578db22e8141d36607e49e2150e0471c2d9e8d26e" /></td>
+<td>
+<div id="ans_f6_q1_p5" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f6_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f6_q1_p5_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f6_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f6_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f6_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f6_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 6)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(6)" />&nbsp;&nbsp
+<div id="gauge_f6" class="block" style="display:none">
+<canvas id="text_gauge_f6" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f6" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f6" style="display:none">
+<div id="radar_f6" class="block" style="display:none">
+<canvas id="chart_radar_f6" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_7">
+<div id="score_2_7" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 7, 0);"></image>
+<span id="score_2_7_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 7, 1);"></image>
+<span id="score_2_7_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 7, 2);"></image>
+<span id="score_2_7_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 7, 3);"></image>
+<span id="score_2_7_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 7, 3);"></image>
+<span id="score_2_7_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 7, 3);"></image>
+<span id="score_2_7_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_7_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_7_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 7, 6);"></image>
+<span id="score_2_7_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_7_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_7_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_7_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_7" class="block" style="display:block">
+<form name="quizForm_f7" id="quizForm_f7" style="display:block">
+<div id="f7" data-formname="f7" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[6]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage"]'></div>
+<div id="notimeout_f7" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 7)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(7)" />&nbsp;&nbsp
+<strong><span id="cdtime_f7"></span></strong>
+</div>
+<div id="goquiz_f7" style="display:block">
+<div id="question_f7_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_yellow.gif" height="20"></image>&nbsp;A quoi correspond l'adresse 127.0.0.1 ?</b>
+<table>
+<tr>
+<td><input type="checkbox" id="f7_q1_p1" value="42bab576a0835dc7605c4f389a0701d76daeb8a8cfd8aa05612d8336aebb72c9" /></td>
+<td>
+<div id="ans_f7_q1_p1" class="block" style="color:black;display:block">A une adresse IP multicast.</div>
+<div id ="f7_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p1_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f7_q1_p2" value="b5d44ddf9df4a295820c78ac13e7d4c1b9c017d10c54e3c3332b2a9f4bdfd980" /></td>
+<td>
+<div id="ans_f7_q1_p2" class="block" style="color:black;display:block">A une adresse IP que l'on peut attribuer à un poste pour lui permettre de communiquer avec d'autres postes.</div>
+<div id ="f7_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p2_0" style="display:none" data-feedback='["Etant donné que cette adresse est commune à tous les systèmes, il n&rsquo;est pas possible d&rsquo;identifier un seul poste dans un réseau. Par ailleurs, cette interface ne dispose pas d&rsquo;adresse Ethernet."]'>Etant donné que cette adresse est commune à tous les systèmes, il n&rsquo;est pas possible d&rsquo;identifier un seul poste dans un réseau. Par ailleurs, cette interface ne dispose pas d&rsquo;adresse Ethernet.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f7_q1_p3" value="32b5324598449ad51a10bb0422474b0d959cc0c7f1a804a13ab44b4921d97c2d" /></td>
+<td>
+<div id="ans_f7_q1_p3" class="block" style="color:black;display:block">A l'adresse IP de loopback.</div>
+<div id ="f7_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f7_q1_p4" value="54f05208d5771ff077545ba82fabbc9bdef4455ac70588ee778018102de71be9" /></td>
+<td>
+<div id="ans_f7_q1_p4" class="block" style="color:black;display:block">A une adresse IP publique.</div>
+<div id ="f7_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f7_q1_p5" value="4c919de75e32e9072a2571e600d5dca4e6567b4ce2565e012f6d0d6c8d61ef12" /></td>
+<td>
+<div id="ans_f7_q1_p5" class="block" style="color:black;display:block">A une adresse interne destinée à faire communiquer des applications locales.</div>
+<div id ="f7_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p5_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f7_q1_p6" value="6a992a1051cfefaebbc35c864b5bc5c0d5b76c1f367c04df0b83f9a2659982fd" /></td>
+<td>
+<div id="ans_f7_q1_p6" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f7_q1_p6_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f7_q1_p6_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f7_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f7_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f7_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f7_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 7)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(7)" />&nbsp;&nbsp
+<div id="gauge_f7" class="block" style="display:none">
+<canvas id="text_gauge_f7" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f7" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f7" style="display:none">
+<div id="radar_f7" class="block" style="display:none">
+<canvas id="chart_radar_f7" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_8">
+<div id="score_2_8" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 8, 0);"></image>
+<span id="score_2_8_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 8, 1);"></image>
+<span id="score_2_8_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 8, 2);"></image>
+<span id="score_2_8_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 8, 3);"></image>
+<span id="score_2_8_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 8, 3);"></image>
+<span id="score_2_8_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 8, 3);"></image>
+<span id="score_2_8_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_8_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_8_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 8, 6);"></image>
+<span id="score_2_8_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_8_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_8_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_8_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_8" class="block" style="display:block">
+<form name="quizForm_f8" id="quizForm_f8" style="display:block">
+<div id="f8" data-formname="f8" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[2]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Encapsulation", "Trame"]'></div>
+<div id="notimeout_f8" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 8)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(8)" />&nbsp;&nbsp
+<strong><span id="cdtime_f8"></span></strong>
+</div>
+<div id="goquiz_f8" style="display:block">
+<div id="question_f8_q1" class="block" style="display:block" data-questionskill="[1, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Existe-t-il un champ dans un datagramme IP qui joue le même rôle que l'Ether Type dans une trame Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p1" value="e60207ace086ae5103dbdaea8bb94aca7d9140d3b02b6d8507b3d82d5dd35970" /></td>
+<td>
+<div id="ans_f8_q1_p1" class="block" style="color:black;display:block">Oui.</div>
+<div id ="f8_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f8_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f8_q1" id="f8_q1_p2" value="7e2f25f8dbf2a4c100e64504b913e05fc80ef88f4e09d6baa172b6ea64d83958" /></td>
+<td>
+<div id="ans_f8_q1_p2" class="block" style="color:black;display:block">Non.</div>
+<div id ="f8_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f8_q1_p2_0" style="display:none" data-feedback='["Le principe de l&rsquo;encapsulation repose sur une identification de la nature du payload dans l&rsquo;entête de la trame qui le précède."]'>Le principe de l&rsquo;encapsulation repose sur une identification de la nature du payload dans l&rsquo;entête de la trame qui le précède.</div>
+</td></tr>
+</table>
+<div id="fok_f8_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f8_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f8_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f8_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 8)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(8)" />&nbsp;&nbsp
+<div id="gauge_f8" class="block" style="display:none">
+<canvas id="text_gauge_f8" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f8" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f8" style="display:none">
+<div id="radar_f8" class="block" style="display:none">
+<canvas id="chart_radar_f8" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_9">
+<div id="score_2_9" class="scores" data-blockname="Synthèse">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 9, 0);"></image>
+<span id="score_2_9_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 9, 1);"></image>
+<span id="score_2_9_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 9, 2);"></image>
+<span id="score_2_9_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 9, 3);"></image>
+<span id="score_2_9_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 9, 3);"></image>
+<span id="score_2_9_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 9, 3);"></image>
+<span id="score_2_9_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_9_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_9_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 9, 6);"></image>
+<span id="score_2_9_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_9_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_9_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_9_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_9" class="block" style="display:block">
+<form name="quizForm_f9" id="quizForm_f9" style="display:block">
+<div id="f9" data-formname="f9" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[6]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Adressage"]'></div>
+<div id="notimeout_f9" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 9)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(9)" />&nbsp;&nbsp
+<strong><span id="cdtime_f9"></span></strong>
+</div>
+<div id="goquiz_f9" style="display:block">
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_IP_fr/Audio/9.mp3', 'Question_IP_fr/Image/Diapositive9.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f9_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Comment est définie l'adresse IP de type broadcast d'une carte réseau ? </b>
+<table>
+<tr>
+<td><input type="checkbox" id="f9_q1_p1" value="a3f1cec145bac0c99c4862fc1a6d7514096d5142ebe0c623d82221ef3c4298c5" /></td>
+<td>
+<div id="ans_f9_q1_p1" class="block" style="color:black;display:block">Elle correspond à l'adresse de loopback.</div>
+<div id ="f9_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f9_q1_p1_0" style="display:none" data-feedback='["Contrairement à l&rsquo;adresse de loopback, une adresse de broadcast n&rsquo;est pas limitée à un usage interne à un poste."]'>Contrairement à l&rsquo;adresse de loopback, une adresse de broadcast n&rsquo;est pas limitée à un usage interne à un poste.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f9_q1_p2" value="1550c17f488cf90146420eefcee5f8eaad2ca4f4f851f4fdae9450c7eb164821" /></td>
+<td>
+<div id="ans_f9_q1_p2" class="block" style="color:black;display:block">Elle a toujours la même valeur, par exemple, pour une classe C 255.255.255.0</div>
+<div id ="f9_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f9_q1_p2_0" style="display:none" data-feedback='["Vous confondez masque d&rsquo;adresse IP et adresse de broadcast."]'>Vous confondez masque d&rsquo;adresse IP et adresse de broadcast.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f9_q1_p3" value="caccc49b0f3f5268e3d8337679864db645d7f32d2cae448d666e8d090a5500a9" /></td>
+<td>
+<div id="ans_f9_q1_p3" class="block" style="color:black;display:block">Elle a toujours la même valeur 255.255.255.255</div>
+<div id ="f9_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f9_q1_p3_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f9_q1_p4" value="a2071f5080bc8cfbf7bca0dabd277d33e5d0667d1f5c4efc65cbb53c8082c874" /></td>
+<td>
+<div id="ans_f9_q1_p4" class="block" style="color:black;display:block">Elle correspond à la dernière adresse de la classe IP.</div>
+<div id ="f9_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f9_q1_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f9_q1_p5" value="e715dc6f3524f0e538af6e489128c3cffa9c7370dbc5a4aa4dc724594d96e3f9" /></td>
+<td>
+<div id="ans_f9_q1_p5" class="block" style="color:black;display:block">Elle est définie par l'administrateur du réseau dans un fichier paramètres.</div>
+<div id ="f9_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f9_q1_p5_0" style="display:none" data-feedback='["Les adresses de broadcast sont définies implicitement grâce au masque."]'>Les adresses de broadcast sont définies implicitement grâce au masque.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f9_q1_p6" value="412a988786740ded9d8a3e67f5b64aa89b400b1d08bc32cd972772a6383df231" /></td>
+<td>
+<div id="ans_f9_q1_p6" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f9_q1_p6_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f9_q1_p6_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f9_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f9_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f9_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f9_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 9)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(9)" />&nbsp;&nbsp
+<div id="gauge_f9" class="block" style="display:none">
+<canvas id="text_gauge_f9" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f9" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f9" style="display:none">
+<div id="radar_f9" class="block" style="display:none">
+<canvas id="chart_radar_f9" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_1.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_3.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_notes.png" />
+<span class="iDeviceTitle" color:#009900 >Notes</span></br>
+<div class="iDevice_inner">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<form class="d-flex">
+<input id="searchNote" class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+</form>
+</div>
+</div>
+</nav>
+<div class="container my-3" id="container">
+<div class="card text-dark bg-light mb-3">
+</div>
+<div id="noNotesMatches" class="row container-fluid">
+</div>
+<div id="notesList" class="row container-fluid">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/notes.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Examen - Protocole Ethernet</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<script type="text/javascript" src="Skin/nhpup.js"></script>
+<script type="text/javascript" src="Skin/know.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<iframe id="inlineFrame" title="Inline Frame" width="258" height="144" src="menu.html"></iframe></br>
+<ul>
+<li><a href="index.html" class="daddy main-node">Protocole Ethernet</a></li>
+<li><a href="Page_1.html" class="no-ch">Histoire</a></li>
+<li><a href="Page_2.html" class="no-ch">Etude du protocole</a></li>
+<li><a href="Page_3.html" class="no-ch">Radiographie</a></li>
+<li><a href="Page_4.html" class="no-ch">Trame</a></li>
+<li><a href="Page_5.html" class="no-ch">Gestion des collisions</a></li>
+<li><a href="Page_6.html" class="no-ch">Travaux dirigés</a></li>
+<li><a href="Page_7.html" class="no-ch">Evaluation</a></li>
+<li><a href="Page_8.html" class="no-ch">Définitions</a></li>
+<li id="active"><a class="active no-ch">Examen</a></li>
+</ul>
+<div class="card-body">
+<div class="form-group">
+<textarea id="addNote" class="form-control" aria-label="With textarea"></textarea>
+</div>
+<button style="height:25px;width:120px;background-color: white" id="addBtn" class="btn btn-outline-primary"><h6 style="color: black; font-size:12px;">Ajouter la note</h6></button>
+</div>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_8.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="index.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Examen - Protocole Ethernet</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_qcm.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Examen&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_9_1" class="scores" data-blockname="Examen">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(9, 1, 0);"></image>
+<span id="score_9_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(9, 1, 1);"></image>
+<span id="score_9_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(9, 1, 2);"></image>
+<span id="score_9_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(9, 1, 3);"></image>
+<span id="score_9_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(9, 1, 3);"></image>
+<span id="score_9_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(9, 1, 3);"></image>
+<span id="score_9_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_9_1_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_9_1_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(9, 1, 6);"></image>
+<span id="score_9_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_9_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_9_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_9_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<form name="quizForm_f1" id="quizForm_f1" style="display:block">
+<div id="f1" data-formname="f1" data-questionorder="0" data-questionid="0" data-questiontime="380" data-questionnb="19" data-proposalnb="[2, 2, 5, 4, 4, 6, 5, 5, 5, 5, 4, 2, 6, 4, 5, 4, 5, 4, 2]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='["Acheminement", "Type adresse", "Adressage", "Trame", "Encapsulation", "Ethertype", "Adresse"]'></div>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(9, 1)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(1)" />&nbsp;&nbsp
+<strong><span id="cdtime_f1"></span></strong>
+<div id="goquiz_f1" style="display:none"></br>
+<div id="question_f1_q1" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Est-il indispensable qu'une trame Ethernet soit propagée au niveau de tous les postes connectés à un même réseau local s'il s'agit d'un message adressé à un seul d'entre eux ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q1" id="f1_q1_p1" value="5971042958927d7b016c54b7a376f772196199dddd9b768e696bf9a5b6951c79" /></td>
+<td>
+<div id="ans_f1_q1_p1" class="block" style="color:black;display:block">Oui.</div>
+<div id ="f1_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q1" id="f1_q1_p2" value="0a4fb399a45306d5a2449a93053f4e416ae67ccb1411a509229315a81f6b87ec" /></td>
+<td>
+<div id="ans_f1_q1_p2" class="block" style="color:black;display:block">Non.</div>
+<div id ="f1_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q1_p2_0" style="display:none" data-feedback='["L&rsquo;identification du destinataire se fait à la réception de la trame."]'>L&rsquo;identification du destinataire se fait à la réception de la trame.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q2" class="block" style="display:block" data-questionskill="[1]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Est-ce qu'une trame Ethernet peut connaitre préalablement l'itinéraire à emprunter pour atteindre le poste de destination ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q2" id="f1_q2_p1" value="a91e92c630c8333d58a0e9682483c71992625d200d9a896703a26b74faafa951" /></td>
+<td>
+<div id="ans_f1_q2_p1" class="block" style="color:black;display:block">Oui.</div>
+<div id ="f1_q2_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q2_p1_0" style="display:none" data-feedback='["Le support de transmission étant passif, la trame doit être acheminée auprès de tous les postes pour y être analysée."]'>Le support de transmission étant passif, la trame doit être acheminée auprès de tous les postes pour y être analysée.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q2" id="f1_q2_p2" value="67a367020103d3704ad4fd01c8780b672f3cc36bafe15e05c5064294322f75b5" /></td>
+<td>
+<div id="ans_f1_q2_p2" class="block" style="color:black;display:block">Non.</div>
+<div id ="f1_q2_p2_1" style="display:none" data-feedback='["Le support de transmission étant passif, il ne peut interagir dans la logique de distribution des trames."]'>Le support de transmission étant passif, il ne peut interagir dans la logique de distribution des trames.</div>
+<div id ="f1_q2_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f1_q2" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q2" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q2" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q2" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q3" class="block" style="display:block" data-questionskill="[4]"><b><image src="Skin/icon_question_yellow.gif" height="20"></image>&nbsp;En cas d'anomalie lors de la vérification du checksum, que fait le protocole Ethernet ?</b>
+<table>
+<tr>
+<td><input type="checkbox" id="f1_q3_p1" value="5d9347fe0092110bd7d06d9e0733a84e7ca9d8ec6974ff7dd8f77f707cf13f5f" /></td>
+<td>
+<div id="ans_f1_q3_p1" class="block" style="color:black;display:block">Il corrige la trame s'il le peut.</div>
+<div id ="f1_q3_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q3_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q3_p2" value="10249167f3a4e31ba7dd6f788b9bcfbefed88c6ae32681a05a652c2e8b624f07" /></td>
+<td>
+<div id="ans_f1_q3_p2" class="block" style="color:black;display:block">Il réémet une nouvelle trame afin de prévenir l'expéditeur.</div>
+<div id ="f1_q3_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q3_p2_0" style="display:none" data-feedback='["Le protocole Ethernet n&rsquo;est pas chargé d&rsquo;assurer la garantie d&rsquo;acheminement des trames."]'>Le protocole Ethernet n&rsquo;est pas chargé d&rsquo;assurer la garantie d&rsquo;acheminement des trames.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q3_p3" value="19c0c3bd6c7f1c4ac50121a6ea1d9d3629784bd93c091c1b2f952f120c3f172b" /></td>
+<td>
+<div id="ans_f1_q3_p3" class="block" style="color:black;display:block">Il remet le payload en l'état à la couche supérieure.</div>
+<div id ="f1_q3_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q3_p3_0" style="display:none" data-feedback='["Les anomalies peuvent endommager une trame en n&rsquo;importe quelle position. Il n&rsquo;est donc pas envisageable de remettre un contenu à la couche supérieure dont l&rsquo;intégrité serait aléatoire."]'>Les anomalies peuvent endommager une trame en n&rsquo;importe quelle position. Il n&rsquo;est donc pas envisageable de remettre un contenu à la couche supérieure dont l&rsquo;intégrité serait aléatoire.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q3_p4" value="3eeafb9d99418fa2def802090e1b99d8629ee0467dd8fc50e105aaac2a1a50d2" /></td>
+<td>
+<div id="ans_f1_q3_p4" class="block" style="color:black;display:block">Il laisse tomber la trame reçue s'il ne peut rien corriger.</div>
+<div id ="f1_q3_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q3_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q3_p5" value="35a7a91d9c15825ff6afccb1c4d0f94d7c00390cb1a1f9e5e1717367c3f43ba3" /></td>
+<td>
+<div id="ans_f1_q3_p5" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q3_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q3_p5_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q3" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q3" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q3" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q3" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q4" class="block" style="display:block" data-questionskill="[3]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quelles trames Ethernet sont acceptées à la réception par la carte réseau du destinataire et dont les données sont ensuite remises à la couche 3 ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q4" id="f1_q4_p1" value="3ed15d91bf745663c0d48d266c86e1540da6be2a5079966e955933cad237c7a8" /></td>
+<td>
+<div id="ans_f1_q4_p1" class="block" style="color:black;display:block">Les trames utilisant comme adresse Ethernet de destination l'adresse Ethernet unicast du poste destinataire.</div>
+<div id ="f1_q4_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q4_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q4" id="f1_q4_p2" value="95a52eb49ea10a92c7a562daaa8f54ef561110ee3b29535c483e35915753bcf2" /></td>
+<td>
+<div id="ans_f1_q4_p2" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q4_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q4_p2_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q4" id="f1_q4_p3" value="37161c70b4fb7199aa1c44fa4ad04aa2071818e3b403ddfffc6511d67b5bbe12" /></td>
+<td>
+<div id="ans_f1_q4_p3" class="block" style="color:black;display:block">Les trames utilisant comme adresse Ethernet de destination n'importe quelle adresse Ethernet unicast.</div>
+<div id ="f1_q4_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q4_p3_0" style="display:none" data-feedback='["Le principe de l&rsquo;adressage serait rendu caduque."]'>Le principe de l&rsquo;adressage serait rendu caduque.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q4" id="f1_q4_p4" value="bcf1678685fd56561bb73eadf82b93b24c26f22c3348870721a03dccd7c20339" /></td>
+<td>
+<div id="ans_f1_q4_p4" class="block" style="color:black;display:block">Les trames utilisant une adresse Ethernet de destination ayant pour valeur 00:00:00:00:00:00.</div>
+<div id ="f1_q4_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q4_p4_0" style="display:none" data-feedback='["Le principe de l&rsquo;adressage serait rendu caduque."]'>Le principe de l&rsquo;adressage serait rendu caduque.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q4" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q4" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q4" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q4" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q5" class="block" style="display:block" data-questionskill="[4, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quel est le type de la trame Ethernet (FF:FF:FF:FF:FF:FF) (08:00:20:A3:B1:22) (0x0800) (données) (checksum) ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q5" id="f1_q5_p1" value="0c59c597acec249b4464da1e762be9215b579610fe5702af1170c96d55c03b0e" /></td>
+<td>
+<div id="ans_f1_q5_p1" class="block" style="color:black;display:block">Ethernet unicast.</div>
+<div id ="f1_q5_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q5_p1_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q5" id="f1_q5_p2" value="7277d895b14b5c2c9a2b8c07439a17a157324ef6ba7f82a43a82dd28bfcb759e" /></td>
+<td>
+<div id="ans_f1_q5_p2" class="block" style="color:black;display:block">Ethernet multicast.</div>
+<div id ="f1_q5_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q5_p2_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q5" id="f1_q5_p3" value="0e945e94a2391f5341c6fc45028242b33454014c38118707a4f6a53a7dbaa1d0" /></td>
+<td>
+<div id="ans_f1_q5_p3" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q5_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q5_p3_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q5" id="f1_q5_p4" value="d356854e45109672e20b7b82e7798a0ef1d18902741fcc24e014d817a4765f17" /></td>
+<td>
+<div id="ans_f1_q5_p4" class="block" style="color:black;display:block">Ethernet broadcast.</div>
+<div id ="f1_q5_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q5_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f1_q5" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q5" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q5" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q5" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q6" class="block" style="display:block" data-questionskill="[4]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Combien d'octets entrent dans la composition de l'entête de la trame Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q6" id="f1_q6_p1" value="0407183a42834c5c71fa172527a76204439c191d8b712478c4b961c2204c2c7a" /></td>
+<td>
+<div id="ans_f1_q6_p1" class="block" style="color:black;display:block">14 octets.</div>
+<div id ="f1_q6_p1_1" style="display:none" data-feedback='["L&rsquo;entête a bien été identifiée."]'>L&rsquo;entête a bien été identifiée.</div>
+<div id ="f1_q6_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q6" id="f1_q6_p2" value="589a66766dd9903ceb427b8a0449eed6cbb787a5c9bf4950f05c2191750c9407" /></td>
+<td>
+<div id="ans_f1_q6_p2" class="block" style="color:black;display:block">60 octets.</div>
+<div id ="f1_q6_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q6_p2_0" style="display:none" data-feedback='["Vous avez probablement pris en compte le padding dans le calcul."]'>Vous avez probablement pris en compte le padding dans le calcul.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q6" id="f1_q6_p3" value="91efbb0909dfebe749d29c6d6897ccdf22ca7d09d8b44b5e177fb95582ef2754" /></td>
+<td>
+<div id="ans_f1_q6_p3" class="block" style="color:black;display:block">12 octets.</div>
+<div id ="f1_q6_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q6_p3_0" style="display:none" data-feedback='["Vous n&rsquo;avez probablement pris en compte que les adresses."]'>Vous n&rsquo;avez probablement pris en compte que les adresses.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q6" id="f1_q6_p4" value="e5ec8968e880ebfb2e33ae5dde338477bcc483dbb295a838381797601c8ccd4a" /></td>
+<td>
+<div id="ans_f1_q6_p4" class="block" style="color:black;display:block">6 octets.</div>
+<div id ="f1_q6_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q6_p4_0" style="display:none" data-feedback='["Vous n&rsquo;avez probablement pris en compte qu&rsquo;une adresse."]'>Vous n&rsquo;avez probablement pris en compte qu&rsquo;une adresse.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q6" id="f1_q6_p5" value="e5d413769dd21f3aa8c1a994765f707b7d24b094b1279ba30190fcee3b62044a" /></td>
+<td>
+<div id="ans_f1_q6_p5" class="block" style="color:black;display:block">42 octets.</div>
+<div id ="f1_q6_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q6_p5_0" style="display:none" data-feedback='["Vous avez probablement pris en compte le payload dans le calcul."]'>Vous avez probablement pris en compte le payload dans le calcul.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q6" id="f1_q6_p6" value="9b8cb1884bb3993c6ab59bc35334518e356be6e42a83a8894bdf6e32e4cf5da1" /></td>
+<td>
+<div id="ans_f1_q6_p6" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q6_p6_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q6_p6_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q6" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q6" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q6" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q6" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q7" class="block" style="display:block" data-questionskill="[4, 6]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Comment peut-on identifier la nature des données stockées dans une trame Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q7" id="f1_q7_p1" value="404fec9db3839e99b8704c028fbb257aaed8a27fb9d73b48dbc1a9be1a7dbc45" /></td>
+<td>
+<div id="ans_f1_q7_p1" class="block" style="color:black;display:block">L'identification est implicite car le message constitue toujours les données.</div>
+<div id ="f1_q7_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q7_p1_0" style="display:none" data-feedback='["Les différents protocoles encapsulés dans la trame Ethernet (ARP, IP, ...) ont des structures de trames différentes. Il n&rsquo;est donc pas possible de reconstituer le contenu si l&rsquo;on ne dispose pas préalablement d&rsquo;un identifiant."]'>Les différents protocoles encapsulés dans la trame Ethernet (ARP, IP, ...) ont des structures de trames différentes. Il n&rsquo;est donc pas possible de reconstituer le contenu si l&rsquo;on ne dispose pas préalablement d&rsquo;un identifiant.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q7" id="f1_q7_p2" value="491ef2a89f085a6eb803117c095591caed04fb1a4ecb1c74acdde2c2a9119551" /></td>
+<td>
+<div id="ans_f1_q7_p2" class="block" style="color:black;display:block">L'identification est implicite car les données ont toujours la même nature.</div>
+<div id ="f1_q7_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q7_p2_0" style="display:none" data-feedback='["Les différents protocoles encapsulés dans la trame Ethernet (ARP, IP, ...) ont des structures de trames différentes. Il n&rsquo;est donc pas possible de reconstituer le contenu si l&rsquo;on ne dispose pas préalablement d&rsquo;un identifiant."]'>Les différents protocoles encapsulés dans la trame Ethernet (ARP, IP, ...) ont des structures de trames différentes. Il n&rsquo;est donc pas possible de reconstituer le contenu si l&rsquo;on ne dispose pas préalablement d&rsquo;un identifiant.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q7" id="f1_q7_p3" value="e4f5f246888dc48f0cf5ffedcd658cc07a289adc6a262bbb13de3f4e82de088f" /></td>
+<td>
+<div id="ans_f1_q7_p3" class="block" style="color:black;display:block">Il suffit de lire les premiers octets de la trame encapsulée pour en identifier le type et donc sa nature.</div>
+<div id ="f1_q7_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q7_p3_0" style="display:none" data-feedback='["Les protocoles n&rsquo;ont rien de commun. Il n&rsquo;est donc pas possible de s&rsquo;appuyer sur un identifiant qui serait situé en tête de trame."]'>Les protocoles n&rsquo;ont rien de commun. Il n&rsquo;est donc pas possible de s&rsquo;appuyer sur un identifiant qui serait situé en tête de trame.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q7" id="f1_q7_p4" value="01a2fa9a98083a3833cffabf63a0a44cae1a6d762f14c6a5226c11c2b16e49ae" /></td>
+<td>
+<div id="ans_f1_q7_p4" class="block" style="color:black;display:block">Le champ Ether type indique quel est le protocole encapsulé dans la trame Ethernet.</div>
+<div id ="f1_q7_p4_1" style="display:none" data-feedback='["Cet identifiant permet de reconnaitre la structure de la trame encapsulée et de retrouver les champs."]'>Cet identifiant permet de reconnaitre la structure de la trame encapsulée et de retrouver les champs.</div>
+<div id ="f1_q7_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q7" id="f1_q7_p5" value="18c837a21652ebd27a7f48a6947222c38aff4b10ed7d58d2fe1adc30e4eb695d" /></td>
+<td>
+<div id="ans_f1_q7_p5" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q7_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q7_p5_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q7" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q7" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q7" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q7" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q8" class="block" style="display:block" data-questionskill="[7]"><b><image src="Skin/icon_question_yellow.gif" height="20"></image>&nbsp;Comment est définie l'adresse physique Ethernet (MAC) d'une carte réseau ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q8" id="f1_q8_p1" value="8762a15fb031de8c52e9c027c9c02a78cfb56fc38dbb0970f9ca08507cbf047f" /></td>
+<td>
+<div id="ans_f1_q8_p1" class="block" style="color:black;display:block">Flashée dans la carte réseau par le constructeur.</div>
+<div id ="f1_q8_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q8_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q8" id="f1_q8_p2" value="57411505eb22fdaa49fe03ce9324259d1b3efa5dfa2e0da4cfa55750585a15f0" /></td>
+<td>
+<div id="ans_f1_q8_p2" class="block" style="color:black;display:block">Prise aléatoirement par la carte réseau lors de sa mise sous tension afin d'éviter les adresses dupliquées.</div>
+<div id ="f1_q8_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q8_p2_0" style="display:none" data-feedback='["Cela pourrait s&rsquo;envisager, mais cela s&rsquo;avèrerait inutile car la fabrication des cartes réseaux, l&rsquo;assemblage des machines et leur commercialisation rend l&rsquo;attribution des adresses aléatoire."]'>Cela pourrait s&rsquo;envisager, mais cela s&rsquo;avèrerait inutile car la fabrication des cartes réseaux, l&rsquo;assemblage des machines et leur commercialisation rend l&rsquo;attribution des adresses aléatoire.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q8" id="f1_q8_p3" value="43a9228590ca4c27d11b42b6e551a938ad8dc1095f1704f9d423389ccb6b20fa" /></td>
+<td>
+<div id="ans_f1_q8_p3" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q8_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q8_p3_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q8" id="f1_q8_p4" value="e0bcfc34e1930c25f65f7def981477a961936827eff56b4899f2ac4612bf9d9d" /></td>
+<td>
+<div id="ans_f1_q8_p4" class="block" style="color:black;display:block">Donnée par un serveur à la suite d'une requête envoyée par la carte sur le réseau local.</div>
+<div id ="f1_q8_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q8_p4_0" style="display:none" data-feedback='["Il serait trop complexe de devoir mettre en oeuvre un serveur pour attribuer une adresse Ethernet à chacun des postes."]'>Il serait trop complexe de devoir mettre en oeuvre un serveur pour attribuer une adresse Ethernet à chacun des postes.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q8" id="f1_q8_p5" value="ceb706440d7f47b998061004dba6103d0907b20286813d981f762ecca8bccd4c" /></td>
+<td>
+<div id="ans_f1_q8_p5" class="block" style="color:black;display:block">Communiquée par le poste source qui souhaite lui transmettre des données.</div>
+<div id ="f1_q8_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q8_p5_0" style="display:none" data-feedback='["L&rsquo;adressage du destinataire serait impossible."]'>L&rsquo;adressage du destinataire serait impossible.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q8" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q8" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q8" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q8" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q9" class="block" style="display:block" data-questionskill="[5]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Qu'est-ce qu'un "payload" ?</b>
+<table>
+<tr>
+<td><input type="checkbox" id="f1_q9_p1" value="2a6e758c7933cc15ff147f4a09ccbf54346cd5290f1cf9a05828bd4db2184d17" /></td>
+<td>
+<div id="ans_f1_q9_p1" class="block" style="color:black;display:block">Une autre trame encapsulée.</div>
+<div id ="f1_q9_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q9_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q9_p2" value="f713d6a394f7434dc78e20a8958b7dc18b85d9de66ec1d4bddeee716256f045e" /></td>
+<td>
+<div id="ans_f1_q9_p2" class="block" style="color:black;display:block">Un checksum.</div>
+<div id ="f1_q9_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q9_p2_0" style="display:none" data-feedback='["Le payload constitue le message confié par la couche supérieure."]'>Le payload constitue le message confié par la couche supérieure.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q9_p3" value="5c3a7c5453e616bda2fd8969105ed2cd5fb11c19041c54a8f1bb51ac474acacc" /></td>
+<td>
+<div id="ans_f1_q9_p3" class="block" style="color:black;display:block">Les données encapsulées dans une trame.</div>
+<div id ="f1_q9_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q9_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q9_p4" value="5e200d3397f99df930341c43c7cf1d7413994a408a7f2e8fd402b79bd1fb6170" /></td>
+<td>
+<div id="ans_f1_q9_p4" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q9_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q9_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f1_q9_p5" value="7baf3fb403ea8719acc0bc40b0ad68f1044ca38fcd9a7d4fc7d61147926907f4" /></td>
+<td>
+<div id="ans_f1_q9_p5" class="block" style="color:black;display:block">Un entête de trame.</div>
+<div id ="f1_q9_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q9_p5_0" style="display:none" data-feedback='["Le payload constitue le message confié par la couche supérieure."]'>Le payload constitue le message confié par la couche supérieure.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q9" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q9" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q9" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q9" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/10.mp3', 'Question_Ethernet_fr/Image/Diapositive10.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f1_q10" class="block" style="display:block" data-questionskill="[3]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Que se passe-t-il sur un réseau local si aucun poste n'a l'adresse Ethernet correspondant à celle utilisée comme adresse destinataire d'une trame Ethernet envoyée ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q10" id="f1_q10_p1" value="a486d09a1615cacb21a203e1b3b0460e1e7ab8f95e28a64a767c7ba7fd5f0637" /></td>
+<td>
+<div id="ans_f1_q10_p1" class="block" style="color:black;display:block">Un message d'erreur est renvoyé au poste qui a émis la trame.</div>
+<div id ="f1_q10_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q10_p1_0" style="display:none" data-feedback='["Aucun composant du réseau n&rsquo;est responsable de la gestion des trames."]'>Aucun composant du réseau n&rsquo;est responsable de la gestion des trames.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q10" id="f1_q10_p2" value="c7e8c3234a14a48d18e7cde4286ca7e1fe79681ae336cd4b7438a7cd67e101b0" /></td>
+<td>
+<div id="ans_f1_q10_p2" class="block" style="color:black;display:block">La trame circule sur le réseau jusqu'à ce qu'un poste accepte de la recevoir.</div>
+<div id ="f1_q10_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q10_p2_0" style="display:none" data-feedback='["Ce cas de figure conduirait à une congestion du réseau local avec des trames obsolètes."]'>Ce cas de figure conduirait à une congestion du réseau local avec des trames obsolètes.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q10" id="f1_q10_p3" value="3bbc1866fafb2ad23114bf68fb0c7e946aa61e91804747886c1d9947f6847ec3" /></td>
+<td>
+<div id="ans_f1_q10_p3" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q10_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q10_p3_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q10" id="f1_q10_p4" value="a841d5cd477cc2a88dc1983d258473a41c1991f3cf30c00c57d41c8d3fb6da03" /></td>
+<td>
+<div id="ans_f1_q10_p4" class="block" style="color:black;display:block">Le protocole Ethernet lié au poste qui a émis la trame la renvoie jusqu'à obtenir une réponse.</div>
+<div id ="f1_q10_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q10_p4_0" style="display:none" data-feedback='["Le protocole Ethernet définit un mode de fonctionnement, il n&rsquo;est pas un composant du réseau responsable de la gestion des trames."]'>Le protocole Ethernet définit un mode de fonctionnement, il n&rsquo;est pas un composant du réseau responsable de la gestion des trames.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q10" id="f1_q10_p5" value="4820292cb91baad8d6cdde5cb4e3036931d09ad83a5dd75fcee0f195988efc1e" /></td>
+<td>
+<div id="ans_f1_q10_p5" class="block" style="color:black;display:block">La trame est abandonnée sans aucune suite.</div>
+<div id ="f1_q10_p5_1" style="display:none" data-feedback='["Chaque poste étant indépendant, si le destinataire n&rsquo;est pas présent sur le réseau local, le poste source n&rsquo;en est pas averti."]'>Chaque poste étant indépendant, si le destinataire n&rsquo;est pas présent sur le réseau local, le poste source n&rsquo;en est pas averti.</div>
+<div id ="f1_q10_p5_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f1_q10" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q10" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q10" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q10" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/3.mp3', 'Question_Ethernet_fr/Image/Diapositive3.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f1_q11" class="block" style="display:block" data-questionskill="[1, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quels postes connectés à un réseau Ethernet vont recevoir et décoder une trame unicast émise par l'un d'eux ? </b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q11" id="f1_q11_p1" value="16e0edaeca983335a04fe283bc31b23be10d083080405b207d6f59b686a3fe94" /></td>
+<td>
+<div id="ans_f1_q11_p1" class="block" style="color:black;display:block">Tous les postes.</div>
+<div id ="f1_q11_p1_1" style="display:none" data-feedback='["Pour transmettre un message en unicast, c&rsquo;est à dire adressé à un seul poste, l&rsquo;identification du destinataire est réalisée à la réception au niveau de chacun des postes connectés au réseau local Ethernet."]'>Pour transmettre un message en unicast, c&rsquo;est à dire adressé à un seul poste, l&rsquo;identification du destinataire est réalisée à la réception au niveau de chacun des postes connectés au réseau local Ethernet.</div>
+<div id ="f1_q11_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q11" id="f1_q11_p2" value="0057c79786bd05a9cc8e64b8dfeaf5ef8c6470d42bf55689766a4c1de0447ac0" /></td>
+<td>
+<div id="ans_f1_q11_p2" class="block" style="color:black;display:block">Aucun poste.</div>
+<div id ="f1_q11_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q11_p2_0" style="display:none" data-feedback='["La remise d&rsquo;un message nécessite de le présenter à chacun des postes afin de permettre aux trois types d&rsquo;adressage (unicast, multicast et broadcast) de fonctionner sur le même principe."]'>La remise d&rsquo;un message nécessite de le présenter à chacun des postes afin de permettre aux trois types d&rsquo;adressage (unicast, multicast et broadcast) de fonctionner sur le même principe.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q11" id="f1_q11_p3" value="09f25fac668ed99126b4567a3ff326d13bafa88e82bdedbd7bb328a93c2088b3" /></td>
+<td>
+<div id="ans_f1_q11_p3" class="block" style="color:black;display:block">Plusieurs postes.</div>
+<div id ="f1_q11_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q11_p3_0" style="display:none" data-feedback='["Comment la trame pourrait sélectionner quelques postes parmi lesquels l&rsquo;un d&rsquo;eux serait le destinataire ?"]'>Comment la trame pourrait sélectionner quelques postes parmi lesquels l&rsquo;un d&rsquo;eux serait le destinataire ?</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q11" id="f1_q11_p4" value="7c6e2369fa3e9b048d4789708c76eb5611f5890ea3be572a7d39b0b48b84c21a" /></td>
+<td>
+<div id="ans_f1_q11_p4" class="block" style="color:black;display:block">Un seul poste.</div>
+<div id ="f1_q11_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q11_p4_0" style="display:none" data-feedback='["Comment la trame unicast pourrait identifier l&rsquo;itinéraire à emprunter pour uniquement atteindre le poste destinataire ?"]'>Comment la trame unicast pourrait identifier l&rsquo;itinéraire à emprunter pour uniquement atteindre le poste destinataire ?</div>
+</td></tr>
+</table>
+<div id="fok_f1_q11" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q11" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q11" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q11" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q12" class="block" style="display:block" data-questionskill="[4, 3]"><b><image src="Skin/icon_question_yellow.gif" height="20"></image>&nbsp;Sans utiliser d'outil logiciel pour forger une trame, est-il possible de trouver sur un réseau local cette trame Ethernet
+
+(08:00:20:A3:B1:22) (FF:FF:FF:FF:FF:FF) (0x0800) (données) (checksum) ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q12" id="f1_q12_p1" value="f311f317a97dff800e24c691c9b0c953bb99af0fc19851c039615ef7c7d09172" /></td>
+<td>
+<div id="ans_f1_q12_p1" class="block" style="color:black;display:block">Oui.</div>
+<div id ="f1_q12_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q12_p1_0" style="display:none" data-feedback='["La trame a été conçue pour permettre d&rsquo;identifier le destinataire le plus rapidement possible. L&rsquo;adresse source se trouve donc en seconde position.</br></br>Il n&rsquo;y a pas de raison de trouver une adresse de broadcast en source puisque le poste ayant émis cette trame s&rsquo;attend à ce que le destinataire lui réponde à lui seul en unicast avec cette adresse."]'>La trame a été conçue pour permettre d&rsquo;identifier le destinataire le plus rapidement possible. L&rsquo;adresse source se trouve donc en seconde position.</br></br>Il n&rsquo;y a pas de raison de trouver une adresse de broadcast en source puisque le poste ayant émis cette trame s&rsquo;attend à ce que le destinataire lui réponde à lui seul en unicast avec cette adresse.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q12" id="f1_q12_p2" value="da7f13772239e1b11d92d3fe1ba9a05b43e2043a10032612db09f7b8587b453f" /></td>
+<td>
+<div id="ans_f1_q12_p2" class="block" style="color:black;display:block">Non.</div>
+<div id ="f1_q12_p2_1" style="display:none" data-feedback='["Aucun cas de figure conventionnel n&rsquo;utilise ce type de configuration."]'>Aucun cas de figure conventionnel n&rsquo;utilise ce type de configuration.</div>
+<div id ="f1_q12_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f1_q12" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q12" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q12" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q12" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/16.mp3', 'Question_Ethernet_fr/Image/Diapositive16.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f1_q13" class="block" style="display:block" data-questionskill="[1, 3]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Parmi les fonctions proposées, laquelle n'est pas associée au mécanisme de communication couvert par le protocole Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q13" id="f1_q13_p1" value="e73278047a79fc6647d71ce3473bbb42b3006aa21858b6eb0ceb4f19abdf7b9c" /></td>
+<td>
+<div id="ans_f1_q13_p1" class="block" style="color:black;display:block">Identifier une erreur de transmission.</div>
+<div id ="f1_q13_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q13_p1_0" style="display:none" data-feedback='["Le checksum (CRC ou FCS) est chargé de contrôler l&rsquo;intégrité de la trame reçue."]'>Le checksum (CRC ou FCS) est chargé de contrôler l&rsquo;intégrité de la trame reçue.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q13" id="f1_q13_p2" value="66d7bdae696e8a7fb5a62c2699d1b9fe09c4600b68698c9f52b3b601c72575c1" /></td>
+<td>
+<div id="ans_f1_q13_p2" class="block" style="color:black;display:block">Identifier chaque poste.</div>
+<div id ="f1_q13_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q13_p2_0" style="display:none" data-feedback='["Les adresses Ethernet source et destination permettent d&rsquo;identifier les postes concernés."]'>Les adresses Ethernet source et destination permettent d&rsquo;identifier les postes concernés.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q13" id="f1_q13_p3" value="2d17c2ad70fb4b691bd5f30b26a160d61073b3cb5e82de559f857034041b60c9" /></td>
+<td>
+<div id="ans_f1_q13_p3" class="block" style="color:black;display:block">Traduire des informations binaires sur un support.</div>
+<div id ="f1_q13_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q13_p3_0" style="display:none" data-feedback='["Il est indispensable de convertir les 0 et 1 en signaux compatibles avec le support de transmission (câble cuivre, fibre optique ou radio fréquence)."]'>Il est indispensable de convertir les 0 et 1 en signaux compatibles avec le support de transmission (câble cuivre, fibre optique ou radio fréquence).</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q13" id="f1_q13_p4" value="903ba39c27049253d94b79bddd6bc056cdee7d1d72796a9e476b9abd755e0f06" /></td>
+<td>
+<div id="ans_f1_q13_p4" class="block" style="color:black;display:block">Demander la retransmission d'une trame erronée.</div>
+<div id ="f1_q13_p4_1" style="display:none" data-feedback='["Une trame erronée peut être corrigée à la réception ou ignorée si le nombre d&rsquo;erreurs est trop important. Le protocole Ethernet ne prend en compte qu&rsquo;une partie de l&rsquo;intégrité de la transmission."]'>Une trame erronée peut être corrigée à la réception ou ignorée si le nombre d&rsquo;erreurs est trop important. Le protocole Ethernet ne prend en compte qu&rsquo;une partie de l&rsquo;intégrité de la transmission.</div>
+<div id ="f1_q13_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q13" id="f1_q13_p5" value="d902dbd14e042f04b5e38d57400fd98235076246d91c7ba2076b0207e44e7144" /></td>
+<td>
+<div id="ans_f1_q13_p5" class="block" style="color:black;display:block">Partager le support entre les différents postes.</div>
+<div id ="f1_q13_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q13_p5_0" style="display:none" data-feedback='["Sans répartition du temps de parole sur le support, les signaux se mélangeraient et les messages ne seraient alors plus compréhensibles."]'>Sans répartition du temps de parole sur le support, les signaux se mélangeraient et les messages ne seraient alors plus compréhensibles.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q13" id="f1_q13_p6" value="f0cb7996032f32925de4b5503fa6beb9211c267bd779a4231e15ba172d744d01" /></td>
+<td>
+<div id="ans_f1_q13_p6" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q13_p6_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q13_p6_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q13" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q13" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q13" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q13" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q14" class="block" style="display:block" data-questionskill="[4, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quel est le type de la trame Ethernet (08:02:24:14:51:78) (08:00:20:A3:B1:22) (0x0800) (données) (checksum) ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q14" id="f1_q14_p1" value="989229573aa5607e93247ac9f0bd194d720576668d2c276676525d490fe57aa2" /></td>
+<td>
+<div id="ans_f1_q14_p1" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q14_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q14_p1_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q14" id="f1_q14_p2" value="7b1891922a7a43ca5738c60f196aab32d4395109436fad52b8122a8e8ab24ed9" /></td>
+<td>
+<div id="ans_f1_q14_p2" class="block" style="color:black;display:block">Ethernet unicast.</div>
+<div id ="f1_q14_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q14_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q14" id="f1_q14_p3" value="4fc46741078edab7f1f814fe5605cd0c237f34b007517bd7c3000495a4268dfa" /></td>
+<td>
+<div id="ans_f1_q14_p3" class="block" style="color:black;display:block">Ethernet multicast.</div>
+<div id ="f1_q14_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q14_p3_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q14" id="f1_q14_p4" value="7e61caba4ddd55e5c1505932b09cd887dbad4b898ed4cae61a6af10cf6b1ad06" /></td>
+<td>
+<div id="ans_f1_q14_p4" class="block" style="color:black;display:block">Ethernet broadcast.</div>
+<div id ="f1_q14_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q14_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q14" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q14" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q14" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q14" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q15" class="block" style="display:block" data-questionskill="[4]"><b><image src="Skin/icon_question_yellow.gif" height="20"></image>&nbsp;Quelle est la taille minimale d'une trame Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q15" id="f1_q15_p1" value="b53f58f19a64563e753c0a4bbbc6d8a64929f15d16e820edd283d521c19f2fbb" /></td>
+<td>
+<div id="ans_f1_q15_p1" class="block" style="color:black;display:block">42 octets.</div>
+<div id ="f1_q15_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q15_p1_0" style="display:none" data-feedback='["Vous avez probablement oublié le padding."]'>Vous avez probablement oublié le padding.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q15" id="f1_q15_p2" value="0d836dc2b07879061e7a9a6ae40047dec5a2c08bcd5859dbdd2a65d700854301" /></td>
+<td>
+<div id="ans_f1_q15_p2" class="block" style="color:black;display:block">60 octets.</div>
+<div id ="f1_q15_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q15_p2_0" style="display:none" data-feedback='["Vous avez probablement oublié le checksum."]'>Vous avez probablement oublié le checksum.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q15" id="f1_q15_p3" value="21d75853dee9068a38448aff030bd32ac3dec65e6a498db70fe36df5092de56f" /></td>
+<td>
+<div id="ans_f1_q15_p3" class="block" style="color:black;display:block">64 octets.</div>
+<div id ="f1_q15_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q15_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q15" id="f1_q15_p4" value="1f656d1f5f49b03b93d421261209c50a90fc42a7ef5a162f3ce5e3abf2fbf28d" /></td>
+<td>
+<div id="ans_f1_q15_p4" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q15_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q15_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q15" id="f1_q15_p5" value="d622c27ce288277d2e3d44bbddb7ed58f6c2c92be0c62f9dcda70b76df570357" /></td>
+<td>
+<div id="ans_f1_q15_p5" class="block" style="color:black;display:block">14 octets.</div>
+<div id ="f1_q15_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q15_p5_0" style="display:none" data-feedback='["Vous n&rsquo;avez probablement dû prendre en compte que l&rsquo;entête."]'>Vous n&rsquo;avez probablement dû prendre en compte que l&rsquo;entête.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q15" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q15" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q15" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q15" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q16" class="block" style="display:block" data-questionskill="[3, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quel type d'adressage permet d'assurer la confidentialité des données échangées sur un réseau Ethernet ?  </b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q16" id="f1_q16_p1" value="eeaae1fb7ebadd49f6037cafa9be6f6689ffa41290ce0d20936f8e1e4f5afa6f" /></td>
+<td>
+<div id="ans_f1_q16_p1" class="block" style="color:black;display:block">Adressage unicast.</div>
+<div id ="f1_q16_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q16_p1_0" style="display:none" data-feedback='["Dans le cadre de l&rsquo;utilisation conventionnelle d&rsquo;une carte réseau, seul le destinataire ayant la bonne adresse accepte la trame émise. Cependant, une application peut utiliser le mode promiscuous de la carte pour désactiver cette sélection à la réception. La confidentialité ne peut donc pas être respectée."]'>Dans le cadre de l&rsquo;utilisation conventionnelle d&rsquo;une carte réseau, seul le destinataire ayant la bonne adresse accepte la trame émise. Cependant, une application peut utiliser le mode promiscuous de la carte pour désactiver cette sélection à la réception. La confidentialité ne peut donc pas être respectée.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q16" id="f1_q16_p2" value="53e257d6035bbdfa7a6019a72216a71b2a2e0ff82ae0389ee18b0bf098cc86cc" /></td>
+<td>
+<div id="ans_f1_q16_p2" class="block" style="color:black;display:block">Adressage broadcast .</div>
+<div id ="f1_q16_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q16_p2_0" style="display:none" data-feedback='["Tous les postes étant destinataires de la trame émise vont accepter les trames. Les données ne peuvent être confidentielles puisque ce n&rsquo;est pas l&rsquo;objectif de ce mode d&rsquo;adressage."]'>Tous les postes étant destinataires de la trame émise vont accepter les trames. Les données ne peuvent être confidentielles puisque ce n&rsquo;est pas l&rsquo;objectif de ce mode d&rsquo;adressage.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q16" id="f1_q16_p3" value="8fa6e5661a8222a8d1d176360c7a03ab9f39eb2b82ffeee44ea3d5ea08850e58" /></td>
+<td>
+<div id="ans_f1_q16_p3" class="block" style="color:black;display:block">Adressage multicast .</div>
+<div id ="f1_q16_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q16_p3_0" style="display:none" data-feedback='["Les destinataires de la trame émise s&rsquo;invitent par eux même pour accepter les trames reçues. Les données ne peuvent être confidentielles puisque ce n&rsquo;est pas l&rsquo;objectif de ce mode d&rsquo;adressage."]'>Les destinataires de la trame émise s&rsquo;invitent par eux même pour accepter les trames reçues. Les données ne peuvent être confidentielles puisque ce n&rsquo;est pas l&rsquo;objectif de ce mode d&rsquo;adressage.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q16" id="f1_q16_p4" value="f5615d551008ac2892bbdefff7e641d5708b35df8d21f0126886ad5cfa155b32" /></td>
+<td>
+<div id="ans_f1_q16_p4" class="block" style="color:black;display:block">Aucun type d'adressage ne permet d'assurer la confidentialité des données.</div>
+<div id ="f1_q16_p4_1" style="display:none" data-feedback='["Les informations sont diffusées sur toutes les cartes réseaux et ne sont pas cryptées. Le mode promiscuous permet de désactiver le filtrage d&rsquo;adresse à la réception et d&rsquo;accepter toutes les trames quel que soit l&rsquo;adresse de destination utilisée."]'>Les informations sont diffusées sur toutes les cartes réseaux et ne sont pas cryptées. Le mode promiscuous permet de désactiver le filtrage d&rsquo;adresse à la réception et d&rsquo;accepter toutes les trames quel que soit l&rsquo;adresse de destination utilisée.</div>
+<div id ="f1_q16_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f1_q16" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q16" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q16" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q16" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<div id="question_f1_q17" class="block" style="display:block" data-questionskill="[4]"><b><image src="Skin/icon_question_green.gif" height="20"></image>&nbsp;Où se situe le padding dans la trame Ethernet ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q17" id="f1_q17_p1" value="0a3448fff5876068b93654bf4192e3dadcf77a266b1fc3a5238cbfed9334c1d3" /></td>
+<td>
+<div id="ans_f1_q17_p1" class="block" style="color:black;display:block">En début de trame Ethernet avant l'entête ?</div>
+<div id ="f1_q17_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q17_p1_0" style="display:none" data-feedback='["On y trouve les adresses à cet emplacement."]'>On y trouve les adresses à cet emplacement.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q17" id="f1_q17_p2" value="b569e90286449232ba0a6b27bcaf6d6c2d5239389f1630f5447d58860af91aac" /></td>
+<td>
+<div id="ans_f1_q17_p2" class="block" style="color:black;display:block">Entre le payload et le checksum ?</div>
+<div id ="f1_q17_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q17_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q17" id="f1_q17_p3" value="4b75a044a2b4fab4aabd5e9effbad6d14375bf461839c84da1c1657e533be1db" /></td>
+<td>
+<div id="ans_f1_q17_p3" class="block" style="color:black;display:block">En fin de trame après le checksum ?</div>
+<div id ="f1_q17_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q17_p3_0" style="display:none" data-feedback='["Dans ces conditions, il ne serait plus possible d&rsquo;identifier le checksum implicitement placé en fin de trame."]'>Dans ces conditions, il ne serait plus possible d&rsquo;identifier le checksum implicitement placé en fin de trame.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q17" id="f1_q17_p4" value="8c78c18c8ed07db301e608d516d49a0cabe5b80a59096cef6e9350235010d485" /></td>
+<td>
+<div id="ans_f1_q17_p4" class="block" style="color:black;display:block">Entre l'entête et le payload ?</div>
+<div id ="f1_q17_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q17_p4_0" style="display:none" data-feedback='["Le payload est nécessairement placé après le code de l&rsquo;Ether type."]'>Le payload est nécessairement placé après le code de l&rsquo;Ether type.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q17" id="f1_q17_p5" value="54646c355df38f78a07c4ee58dcfb8d8142fc4221d6b7e0d2af880cf50588e26" /></td>
+<td>
+<div id="ans_f1_q17_p5" class="block" style="color:black;display:block">Aucun "padding" n'est représenté.</div>
+<div id ="f1_q17_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q17_p5_0" style="display:none" data-feedback='["Les indications vous sont fournies dans l&rsquo;analyse de la trame."]'>Les indications vous sont fournies dans l&rsquo;analyse de la trame.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q17" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q17" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q17" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q17" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/13.mp3', 'Question_Ethernet_fr/Image/Diapositive13.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f1_q18" class="block" style="display:block" data-questionskill="[3, 2]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quel type d'adressage ne conviendrait pas pour adresser un message à plusieurs postes en envoyant qu'un seul exemplaire d'une trame Ethernet sur un réseau local ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q18" id="f1_q18_p1" value="e14bef869e892d5473b12fbdfe7f6fdde6c3fd31450ccf1976e4185abf09ad18" /></td>
+<td>
+<div id="ans_f1_q18_p1" class="block" style="color:black;display:block">Adressage broadcast.</div>
+<div id ="f1_q18_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q18_p1_0" style="display:none" data-feedback='["Le broadcast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que tous les postes accepteront par convention."]'>Le broadcast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que tous les postes accepteront par convention.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q18" id="f1_q18_p2" value="654e1b9ce100a3ddd3dc0c44910921ee7b16f2e33770ec9cee96e5e79c8afe5e" /></td>
+<td>
+<div id="ans_f1_q18_p2" class="block" style="color:black;display:block">Adressage unicast.</div>
+<div id ="f1_q18_p2_1" style="display:none" data-feedback='["L&rsquo;unicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique qu&rsquo;un seul poste acceptera.</br></br>L&rsquo;unicast ne permettra de solliciter qu&rsquo;une seule adresse Ethernet. Etant donné que tous les postes d&rsquo;un réseau local disposent de cartes réseaux dont les identifiants (adresses) sont tous différents, un seul poste acceptera la trame."]'>L&rsquo;unicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique qu&rsquo;un seul poste acceptera.</br></br>L&rsquo;unicast ne permettra de solliciter qu&rsquo;une seule adresse Ethernet. Etant donné que tous les postes d&rsquo;un réseau local disposent de cartes réseaux dont les identifiants (adresses) sont tous différents, un seul poste acceptera la trame.</div>
+<div id ="f1_q18_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q18" id="f1_q18_p3" value="d8f29fbfe280cc41c26e0cb28ccb876392149304cee23d67298f1d2ef50bccc3" /></td>
+<td>
+<div id="ans_f1_q18_p3" class="block" style="color:black;display:block">Adressage multicast.</div>
+<div id ="f1_q18_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q18_p3_0" style="display:none" data-feedback='["Le multicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que chaque poste pourra accepter sélectivement selon ses besoins."]'>Le multicast permet d&rsquo;envoyer une trame avec une adresse de destination spécifique que chaque poste pourra accepter sélectivement selon ses besoins.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q18" id="f1_q18_p4" value="f47471543ba33fc69d97d6610121e2c0007c639c18f3140f4b5078b85d2697e4" /></td>
+<td>
+<div id="ans_f1_q18_p4" class="block" style="color:black;display:block">Aucune de ces propositions n'est satisfaisante.</div>
+<div id ="f1_q18_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q18_p4_0" style="display:none" data-feedback='["Reprenez le cours, cette notion n&rsquo;est pas bien comprise."]'>Reprenez le cours, cette notion n&rsquo;est pas bien comprise.</div>
+</td></tr>
+</table>
+<div id="fok_f1_q18" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q18" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q18" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q18" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</br>
+</div>
+<a onmousedown="Javascript:updateCoords(event);showMe_mp3_img(0, 0, 400, 'Indice', 'Question_Ethernet_fr/Audio/14.mp3', 'Question_Ethernet_fr/Image/Diapositive14.jpg');" style="cursor:help;align:center;vertical-align:middle;" title="Indice">
+<image src="Skin/icon_play.png"></image></a>
+<div id="question_f1_q19" class="block" style="display:block" data-questionskill="[3]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Est-ce qu'un poste source doit connaitre préalablement l'adresse Ethernet du destinataire avant d'émettre la trame destinée à transporter le message ?</b>
+<table>
+<tr>
+<td><input type="radio" name="f1_q19" id="f1_q19_p1" value="dd45ff868ede53d3e15c484aeab46f07054798845bcdb319304f339d08057ea9" /></td>
+<td>
+<div id="ans_f1_q19_p1" class="block" style="color:black;display:block">Non.</div>
+<div id ="f1_q19_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f1_q19_p1_0" style="display:none" data-feedback='["Il est indispensable d&rsquo;indiquer l&rsquo;adresse du poste de destination afin que celui-ci accepte la trame qui lui est présentée."]'>Il est indispensable d&rsquo;indiquer l&rsquo;adresse du poste de destination afin que celui-ci accepte la trame qui lui est présentée.</div>
+</td></tr>
+<tr>
+<td><input type="radio" name="f1_q19" id="f1_q19_p2" value="21623c2a584e977bb8af954e8258c7c07aecf7f93ea49e3473380470c9b9ea93" /></td>
+<td>
+<div id="ans_f1_q19_p2" class="block" style="color:black;display:block">Oui.</div>
+<div id ="f1_q19_p2_1" style="display:none" data-feedback='["L&rsquo;utilisation d&rsquo;une adresse broadcast pourrait convenir, mais tous les postes accepteraient la trame, ce qui n&rsquo;est probablement pas l&rsquo;objectif."]'>L&rsquo;utilisation d&rsquo;une adresse broadcast pourrait convenir, mais tous les postes accepteraient la trame, ce qui n&rsquo;est probablement pas l&rsquo;objectif.</div>
+<div id ="f1_q19_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f1_q19" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f1_q19" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f1_q19" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f1_q19" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+</br>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(9, 1)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(1)" />&nbsp;&nbsp
+<div id="gauge_f1" class="block" style="display:none">
+<canvas id="text_gauge_f1" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f1" width="100" height="70"></canvas>
+</br></br></div>
+<div id="radar_f1" class="block" style="display:none">
+<canvas id="chart_radar_f1" width="400" height="400"></canvas></div>
+</div>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_8.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="index.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_notes.png" />
+<span class="iDeviceTitle" color:#009900 >Notes</span></br>
+<div class="iDevice_inner">
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<form class="d-flex">
+<input id="searchNote" class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+</form>
+</div>
+</div>
+</nav>
+<div class="container my-3" id="container">
+<div class="card text-dark bg-light mb-3">
+</div>
+<div id="noNotesMatches" class="row container-fluid">
+</div>
+<div id="notesList" class="row container-fluid">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/notes.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

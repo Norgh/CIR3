@@ -1,0 +1,152 @@
+<html>
+<head><title>echange_ICMP_1</title>
+<style type="text/css">
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+
+<div class="tooltip" id="n8"> Le cache ARP a été préalablement complété par les</br>@IP et @Ethernet du poste 2 suite à une requête ARP </div>
+<div class="tooltip" id="n9"> l'interface réseau du poste</br>1 dispose de l'@Ethernet 1 </div>
+<div class="tooltip" id="n10"> l'interface réseau du</br>poste 1 dispose de l'@IP 1 </div>
+<div class="tooltip" id="n11"> l'interface réseau du poste</br>2 dispose de l'@Ethernet 2 </div>
+<div class="tooltip" id="n12"> l'interface réseau du</br>poste 2 dispose de l'@IP 2 </div>
+<div class="tooltip" id="n25"> Le message est une suite d'octets</br>destinée à créer un payload de test </div>
+<div class="tooltip" id="e1"> La trame est reçue</br>par le poste 2 </div>
+<div class="tooltip" id="e2"> L'@IP 2 donnée en paramètre permet</br>de renseigner l'@IP du destinataire </div>
+<div class="tooltip" id="e3"> L'@IP 1 de l'interface permet de</br>renseigner l'@IP de l'expéditeur </div>
+<div class="tooltip" id="e4"> L'@Ethernet 1 de l'interface permet de</br>renseigner l'@Ethernet de l'expéditeur </div>
+<div class="tooltip" id="e5"> Le cache ARP est consulté avec l'@IP 2 afin</br>d'identifier l'@Ethernet du destinataire </div>
+<div class="tooltip" id="e7"> L'@Ethernet 2 présente dans le cache ARP permet</br>de renseigner l'@Ethernet du destinataire </div>
+<div class="tooltip" id="e8"> Le message devient le</br>payload du protocole ICMP </div>
+<div class="tooltip" id="e9"> Une commande PING est</br>exécutée par l'utilisateur </div>
+<div class="tooltip" id="e10"> La trame est envoyée sur le</br>réseau local par le poste 1 </div>
+<div class="tooltip" id="e11"> L'@IP 2 est passée en</br>paramètre de la commande </div>
+<div class="tooltip" id="e12"> Le protocole ICMP indique</br>qu'il s'agit d'une requête </div>
+<div class="tooltip" id="e13"> Le payload ainsi créé est encapsulé</br>et balisé par le code protocole [ICMP] </div>
+<div class="tooltip" id="e14"> Le payload ainsi créé est encapsulé</br>et balisé par le code ethertype [IP] </div>
+<div class="tooltip" id="e15"> Le protocole ICMP génère</br>automatiquement un message </div>
+
+<map name="image1_1">
+  <area shape="poly" coords="77,72,77,72,77,64,77,63,78,63,78,59,78,58,79,57,81,55,82,54,83,53,86,52,87,52,88,51,92,51,92,51,92,51,178,51,178,51,178,51,182,51,183,52,184,52,187,53,188,54,189,55,191,57,192,58,192,59,192,63,193,63,193,64,193,72,183,72,183,64,188,64,183,65,182,61,187,60,183,63,181,61,185,58,183,62,180,61,182,56,181,61,177,61,178,56,178,61,92,61,92,56,93,61,89,61,88,56,90,61,87,62,85,58,89,61,87,63,83,60,88,61,87,65,82,64,87,64,87,72,87,72" alt="" onmouseover="showTooltip('e15')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="277,343,277,343,277,339,277,338,277,337,277,335,278,333,279,332,281,331,282,330,283,330,291,329,291,329,291,329,337,329,337,334,336,329,343,328,344,333,341,329,343,327,346,331,341,330,342,328,347,329,342,329,342,325,352,325,352,329,352,330,351,331,351,333,350,334,349,335,347,337,346,337,345,338,337,339,337,339,337,339,291,339,291,334,292,339,285,340,284,335,287,339,285,340,282,336,287,337,287,339,282,338,287,338,287,342,287,342" alt="" onmouseover="showTooltip('e14')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="199,343,199,343,199,338,199,337,199,337,200,335,200,333,202,332,204,331,205,330,206,330,213,329,214,329,214,329,242,329,242,334,241,329,248,328,249,333,246,329,248,327,251,331,246,330,247,328,252,329,247,329,247,325,257,325,257,329,257,330,256,331,256,333,255,334,254,335,252,337,251,338,250,338,242,339,242,339,242,339,214,339,214,334,215,339,207,340,207,335,210,339,208,340,205,336,209,338,209,340,204,338,209,338,209,343,209,343" alt="" onmouseover="showTooltip('e13')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="57,72,57,72,57,55,57,55,57,55,58,50,58,49,59,49,60,45,61,44,62,44,65,42,66,41,67,41,72,41,72,40,72,40,210,40,210,40,210,41,215,41,216,41,216,42,220,44,221,44,221,45,223,49,224,49,224,50,224,55,225,55,225,55,225,296,215,296,215,55,220,55,215,56,214,52,219,51,215,54,213,51,217,48,214,52,211,50,214,46,213,51,209,50,210,45,210,50,72,50,72,45,73,50,69,51,68,46,70,50,67,52,65,48,69,51,67,54,63,51,68,52,67,56,62,55,67,55,67,72,67,72" alt="" onmouseover="showTooltip('e12')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="50,31,50,31,116,31,116,31,116,31,121,32,122,32,122,32,126,34,127,35,127,36,129,39,130,40,130,41,130,45,131,46,131,46,131,72,121,72,121,46,126,46,121,47,120,42,125,42,121,44,119,41,123,38,120,43,117,41,120,37,119,41,115,41,116,36,116,41,50,41,50,41" alt="" onmouseover="showTooltip('e11')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="85,241,85,241,85,301,80,301,85,300,86,304,81,305,85,302,87,306,83,308,85,304,88,306,86,310,86,305,91,306,90,311,90,306,156,306,156,316,90,316,90,316,89,316,85,315,84,315,83,314,80,312,79,312,78,311,76,308,76,307,76,306,75,301,75,301,75,301,75,241,75,241" alt="" onmouseover="showTooltip('e10')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="49,50,49,50,49,72,39,72,39,50,39,50" alt="" onmouseover="showTooltip('e9')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="193,101,193,101,193,296,183,296,183,101,183,101" alt="" onmouseover="showTooltip('e8')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="129,135,129,135,401,135,401,135,401,135,406,136,407,136,407,137,411,139,412,139,412,140,414,143,415,144,415,145,415,150,416,150,416,150,416,296,406,296,406,150,411,150,406,151,405,147,410,146,406,149,404,145,408,143,405,147,402,145,405,141,404,146,400,145,401,140,401,145,129,145,129,145" alt="" onmouseover="showTooltip('e7')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="122,101,122,101,122,107,122,108,122,108,122,111,121,112,120,113,118,115,118,116,117,116,113,118,113,118,112,118,108,118,108,118,107,118,83,118,83,113,83,118,79,119,78,114,80,118,77,120,75,115,79,118,77,120,73,117,78,118,78,121,73,120,78,120,78,126,68,126,68,120,68,119,68,119,68,116,69,114,70,113,72,111,72,111,73,110,76,109,77,109,78,109,82,108,82,108,83,108,107,108,107,113,107,108,111,108,112,113,110,108,113,107,115,112,111,108,113,106,117,110,112,109,112,106,117,107,112,107,112,101,112,101" alt="" onmouseover="showTooltip('e5')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="151,257,151,257,369,257,369,257,369,257,374,258,375,258,375,259,379,261,380,261,380,262,382,265,383,266,383,267,383,272,384,272,384,272,384,296,374,296,374,272,379,272,374,273,373,269,378,268,374,271,372,268,376,265,373,269,370,267,373,263,372,268,368,267,369,262,369,267,151,267,151,267" alt="" onmouseover="showTooltip('e4')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="151,244,151,244,305,244,305,244,305,244,310,245,311,245,311,246,315,248,316,248,316,249,318,252,319,253,319,254,319,259,320,259,320,259,320,304,310,304,310,259,315,259,310,260,309,256,314,255,310,258,308,255,312,252,309,256,306,254,309,250,308,255,304,254,305,249,305,254,151,254,151,254" alt="" onmouseover="showTooltip('e3')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="139,101,139,101,139,107,134,107,139,106,139,109,134,110,138,106,140,108,136,112,138,107,141,108,139,113,140,108,144,108,144,113,144,108,274,108,274,108,274,108,279,109,280,109,280,110,284,112,285,112,285,113,287,116,288,117,288,118,288,123,289,123,289,123,289,296,279,296,279,123,284,123,279,124,278,120,283,119,279,122,277,118,281,116,278,120,275,118,278,114,277,119,273,118,274,113,274,118,144,118,144,118,143,118,139,118,138,118,138,118,135,116,133,116,133,115,131,113,130,112,130,111,129,108,129,108,129,107,129,101,129,101" alt="" onmouseover="showTooltip('e2')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="431,306,431,306,484,306,484,311,483,306,488,305,488,310,486,306,489,304,491,308,487,306,489,302,493,305,488,304,489,300,494,301,489,301,489,256,499,256,499,301,499,301,499,301,498,306,498,307,498,308,496,311,495,312,494,312,491,314,490,315,489,315,485,316,484,316,484,316,431,316,431,316" alt="" onmouseover="showTooltip('e1')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="172,80,204,93" alt="" onmouseover="showTooltip('n25')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="445,122,528,159" alt="" onmouseover="showTooltip('n15')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="172,304,204,317" alt="" onmouseover="showTooltip('n14')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="299,304,331,317" alt="" onmouseover="showTooltip('n13')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="431,243,463,256" alt="" onmouseover="showTooltip('n12')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="431,256,463,269" alt="" onmouseover="showTooltip('n11')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="111,243,143,256" alt="" onmouseover="showTooltip('n10')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="111,256,143,269" alt="" onmouseover="showTooltip('n9')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="47,123,130,157" alt="" onmouseover="showTooltip('n8')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="463,195,511,243" alt="" onmouseover="showTooltip('n7')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="268,304,300,317" alt="" onmouseover="showTooltip('n5')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="363,304,395,317" alt="" onmouseover="showTooltip('n4')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="395,304,427,317" alt="" onmouseover="showTooltip('n3')" onmouseout="hideTooltip()"/>
+</map>
+
+
+    <table class="yimagetable" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td><img class="yimage" src="echange_ICMP_1.png" usemap="#image1_1" border="0" alt=""/></td>
+      </tr>
+    </table>
+
+</body>
+</html>
