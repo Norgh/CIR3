@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Pierre\Documents\ISEN\CIR3\Semestre2\Java\Developpement\.metadata\.plugins\org.eclipse.jdt.core
+760091825.index
+1865797976.index
+1124747777.index

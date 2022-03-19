@@ -1,0 +1,44 @@
+import java.util.*;
+import java.io.*;
+import java.math.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+class Player {
+    
+
+    public static void main(String args[]) {
+        
+        
+        
+        
+        while(true) {
+            System.err.println(" **** TOUR : " + tour++ + " **** ");
+            actualiserRessources(in);
+            int touchedSite = in.nextInt(); // -1 if none
+            actualiserCarte(in);
+            System.err.println(" Après instanciation carte");
+            actualiserArmee(in);
+            System.err.println(" Après instanciation armee");
+            calculSiteProche();
+            System.err.println(" Après instanciation calul distance");
+
+            System.out.println("BUILD " + idSiteProche + " BARRACKS-KNIGHT");
+            System.out.println("TRAIN " + idSiteProche);
+            // System.out.println("BUILD 4 BARRACKS-KNIGHT");
+            // System.out.println("TRAIN 4");
+        }
+    }
+
+    
+    
+
+
+
+    
+
+}
+
+
+
