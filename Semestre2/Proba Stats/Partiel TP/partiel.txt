@@ -1,0 +1,54 @@
+clear all;
+close all;
+
+%exo1
+N=200;
+lambda=1/3;
+y = zeros(1,N);
+for i=1:N
+    y=y+exprnd(1/lambda,1,N).^2;
+end
+mu=mean(y)
+sigma=std(y)
+%hold on
+% hist(y)
+%plot(z)
+%hold off
+t=0:1:6000;
+v=((max(y)-min(y))*N)/20
+z = normpdf(t, mu, sigma) * v;
+hold on
+hist(y,20)%HISTOGRAMME
+plot(t,z,'r')
+hold off
+
+%exo2
+% n = 200;
+% x = 4 * rand(n,1) ;
+% y = 4 * rand(n,1) ;
+% plot(x, y, ".", "markersize", 4)
+% axis("equal")
+% r=sqrt(x.^2+y.^2);
+% theta=atan2(y,x);
+% corr(r,theta)
+
+%exo3
+%load A.mat
+% v = zeros(12,1); v(1) = 1;
+% v = A * v; 
+% v = A * v;
+% v = A * v;
+% v = A * v;
+% bar(v)
+% N = 200; i = 1;
+% cumul = zeros(N,1);
+% cur = eye(12);
+% for n = 1:N
+% cur = cur * A;
+% cumul(n) = cur(12,i);
+% for n=2:N
+%     prob(n)=cumul(n)-cumul(n-1);
+% end
+% end
+% %plot(cumul)
+% sum((1:N) .* prob)

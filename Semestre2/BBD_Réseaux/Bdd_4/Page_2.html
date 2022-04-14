@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="Skin/base.css" />
+<link rel="stylesheet" type="text/css" href="Skin/content.css" />
+<link rel="stylesheet" type="text/css" href="Skin/nav.css" />
+<link rel="stylesheet" type="text/css" href="Skin/style.css" />
+<link rel="stylesheet" type="text/css" href="Skin/bootstrap.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Partie n°4 a - TP bases de données</title>
+<link rel="shortcut icon" href="Skin/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]><script type="text/javascript" src="Skin/exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="Skin/jquery.js"></script>
+<script type="text/javascript" src="Skin/exe_jquery.js"></script>
+<script type="text/javascript" src="Skin/common_i18n.js"></script>
+<script type="text/javascript" src="Skin/common.js"></script>
+<script type="text/javascript" src="Skin/exe_html5.js"></script>
+<script type="text/javascript" src="Skin/html5gallery.js"></script>
+<script type="text/javascript" src="Skin/gauge.min.js"></script>
+<script type="text/javascript" src="Skin/chart.min.js"></script>
+<script type="text/javascript" src="Skin/quiz.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<nav id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">TP bases de données</a></li>
+<li><a href="Page_1.html" class="no-ch">Contexte</a></li>
+<li id="active"><a class="active no-ch">Partie n°4 a</a></li>
+<li><a href="Page_3.html" class="no-ch">Partie n°4 b</a></li>
+<li><a href="Page_4.html" class="no-ch">Partie n°4 c</a></li>
+<li><a href="Page_5.html" class="no-ch">Partie n°4 d</a></li>
+<li><a href="Page_6.html" class="no-ch">Partie n°4 e</a></li>
+<li><a href="Page_7.html" class="no-ch">Partie n°4 f</a></li>
+</ul>
+</nav>
+<div id="main-wrapper">
+<section id="main">
+<nav id="sitenav_top"></nav>
+<nav class="pagination noprt">
+<a href="Page_1.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_3.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+<div id="nodeDecoration"><p id="nodeTitle">Partie n°4 a - TP bases de données</p></div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_course.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Enoncé&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_1">
+<div id="score_2_1" class="scores" data-blockname="Enoncé">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 1, 0);"></image>
+<span id="score_2_1_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 1, 1);"></image>
+<span id="score_2_1_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 1, 2);"></image>
+<span id="score_2_1_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 1, 3);"></image>
+<span id="score_2_1_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;display:none;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_pass.png"></image>
+<span id="score_2_1_6" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_fail.png"></image>
+<span id="score_2_1_7" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 1, 6);"></image>
+<span id="score_2_1_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_1_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_1" class="block" style="display:block">
+<div style="column-width: 800.0px;column-gap: 2em;">
+Présentez pour l'ensemble des commandes : les références des types de pièces et les quantités de pièces livrées. Le résultat sera trié par type de pièces.</br></br>Présentation du résultat : reference type piece | quantites pieces livrees
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="MediaIdevice">
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="Skin/icon_block_qcm.png" />
+<span class="iDeviceTitle" style="color:#DD0000" >Modèle&nbsp&nbsp</span><br/>
+<div class="iDevice_inner">
+<nav id="sitenav_2">
+<div id="score_2_2" class="scores" data-blockname="Modèle">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 2, 0);"></image>
+<span id="score_2_2_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 2, 1);"></image>
+<span id="score_2_2_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 2, 2);"></image>
+<span id="score_2_2_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 2, 3);"></image>
+<span id="score_2_2_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_2_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_2_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 2, 6);"></image>
+<span id="score_2_2_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_2_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_2" class="block" style="display:block">
+<form name="quizForm_f2" id="quizForm_f2" style="display:block">
+<div id="f2" data-formname="f2" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[5]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='[""]'></div>
+<div id="notimeout_f2" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 2)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(2)" />&nbsp;&nbsp
+<strong><span id="cdtime_f2"></span></strong>
+</div>
+<div id="goquiz_f2" style="display:block">
+<div id="question_f2_q1" class="block" style="display:block" data-questionskill="[]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quelles sont les entités concernées ?</b>
+<table>
+<tr>
+<td><input type="checkbox" id="f2_q1_p1" value="0e7d854f2aed4acdec160d1b3bbf5a647193eec151feb61e14968650723d36de" /></td>
+<td>
+<div id="ans_f2_q1_p1" class="block" style="color:black;display:block">Fournisseur</div>
+<div id ="f2_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f2_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f2_q1_p2" value="034f2c9f26faab1eb0c2c27ebdf29b37743ceaa075a665bef737b1b3776b0bf1" /></td>
+<td>
+<div id="ans_f2_q1_p2" class="block" style="color:black;display:block">Commande</div>
+<div id ="f2_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f2_q1_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f2_q1_p3" value="af8461ec8dd753636aea53fe699ee0ac3f788508650e92b64c95a9a45cbd22f8" /></td>
+<td>
+<div id="ans_f2_q1_p3" class="block" style="color:black;display:block">Ligne commande</div>
+<div id ="f2_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f2_q1_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f2_q1_p4" value="7b966a9bfdbec03f20b7573ec626a2d894d40f58443e1286c99bd3ef05882684" /></td>
+<td>
+<div id="ans_f2_q1_p4" class="block" style="color:black;display:block">Type pièce</div>
+<div id ="f2_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f2_q1_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f2_q1_p5" value="ac9bbec219f0a40982a0d96ee578be84aed9e20b0704e202747082dd22fa80b4" /></td>
+<td>
+<div id="ans_f2_q1_p5" class="block" style="color:black;display:block">Pièce</div>
+<div id ="f2_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f2_q1_p5_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f2_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f2_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f2_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f2_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 2)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(2)" />&nbsp;&nbsp
+<div id="gauge_f2" class="block" style="display:none">
+<canvas id="text_gauge_f2" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f2" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f2" style="display:none">
+<div id="radar_f2" class="block" style="display:none">
+<canvas id="chart_radar_f2" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_3">
+<div id="score_2_3" class="scores" data-blockname="Modèle">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 3, 0);"></image>
+<span id="score_2_3_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 3, 1);"></image>
+<span id="score_2_3_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 3, 2);"></image>
+<span id="score_2_3_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 3, 3);"></image>
+<span id="score_2_3_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_3_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_3_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 3, 6);"></image>
+<span id="score_2_3_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_3_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_3" class="block" style="display:block">
+<form name="quizForm_f3" id="quizForm_f3" style="display:block">
+<div id="f3" data-formname="f3" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[7]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='[""]'></div>
+<div id="notimeout_f3" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 3)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(3)" />&nbsp;&nbsp
+<strong><span id="cdtime_f3"></span></strong>
+</div>
+<div id="goquiz_f3" style="display:block">
+<div id="question_f3_q1" class="block" style="display:block" data-questionskill="[]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quelles sont les relations concernées ?</b>
+<table>
+<tr>
+<td><input type="checkbox" id="f3_q1_p1" value="a384b252d80e24b29b9b0b14eceffef651dc89cec3ad0f8544dde18f83d3625a" /></td>
+<td>
+<div id="ans_f3_q1_p1" class="block" style="color:black;display:block">Destiner</div>
+<div id ="f3_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f3_q1_p2" value="477be5e4d266c354ddbf88a2f247f9769e9fd888a315d675cd244be377f45956" /></td>
+<td>
+<div id="ans_f3_q1_p2" class="block" style="color:black;display:block">Détailler</div>
+<div id ="f3_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f3_q1_p3" value="0be5e7a74028818180ea0f6d2eb8eb9e6e871b00638dac7b5dd851510d888fe7" /></td>
+<td>
+<div id="ans_f3_q1_p3" class="block" style="color:black;display:block">Commander</div>
+<div id ="f3_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f3_q1_p4" value="af4613730a069ae067739c6c550344fc5847f40d72fed170cd2c8c323e87aaf7" /></td>
+<td>
+<div id="ans_f3_q1_p4" class="block" style="color:black;display:block">Commercialiser</div>
+<div id ="f3_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f3_q1_p5" value="031f119565b5f2dc911798bde5c79518c8fd1bcd46323eba1b62195b0fb89481" /></td>
+<td>
+<div id="ans_f3_q1_p5" class="block" style="color:black;display:block">Appartenir</div>
+<div id ="f3_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p5_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f3_q1_p6" value="f01252ff1deec5d0e650307be9e5d401b4c6fec94f408fffd98f93077bf1ce67" /></td>
+<td>
+<div id="ans_f3_q1_p6" class="block" style="color:black;display:block">Caractériser</div>
+<div id ="f3_q1_p6_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p6_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f3_q1_p7" value="c56ef45501062a7171689be8dffd5eadb5ee8638e340a5f43558d2f5e94865e1" /></td>
+<td>
+<div id="ans_f3_q1_p7" class="block" style="color:black;display:block">Aucune relation</div>
+<div id ="f3_q1_p7_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f3_q1_p7_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f3_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f3_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f3_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f3_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 3)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(3)" />&nbsp;&nbsp
+<div id="gauge_f3" class="block" style="display:none">
+<canvas id="text_gauge_f3" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f3" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f3" style="display:none">
+<div id="radar_f3" class="block" style="display:none">
+<canvas id="chart_radar_f3" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+<nav id="sitenav_4">
+<div id="score_2_4" class="scores" data-blockname="Modèle">
+<span style="font-weight: bold;font-size: 0.8rem;"><a href="index.html#sitenav_0" style="color:black">Compréhension</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_edit.png" onmousedown="Javascript:openText(2, 4, 0);"></image>
+<span id="score_2_4_0" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_remove.png" onmousedown="Javascript:updateScores(2, 4, 1);"></image>
+<span id="score_2_4_1" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_help.png" onmousedown="Javascript:openText(2, 4, 2);"></image>
+<span id="score_2_4_2" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_3" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_4" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_ok.png" onmousedown="Javascript:updateScores(2, 4, 3);"></image>
+<span id="score_2_4_5" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<span style="font-weight: bold;font-size: 0.8rem;">&nbsp;&nbsp;<a href="index.html#sitenav_0" style="color:black">QCM</a>&nbsp;:&nbsp;&nbsp;</span>
+<image style="vertical-align: middle;" src="Skin/button_pass.png"></image>
+<span id="score_2_4_6" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;" src="Skin/button_fail.png"></image>
+<span id="score_2_4_7" style="font-size: 0.85rem;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+<image style="vertical-align: middle;display:none;" src="Skin/button_read.png" onmousedown="Javascript:updateScores(2, 4, 6);"></image>
+<span id="score_2_4_8" style="font-size: 0.85rem;display:none;">
+<a>0&nbsp;&nbsp;</a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_time" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_read" style="font-size: 0.7rem;">
+<a></a>
+</span>
+&nbsp;&nbsp;<span id="score_2_4_text" style="font-size: 0.7rem;" class="row container-fluid">
+<a></a>
+</span>
+</div>
+<div id="activity_4" class="block" style="display:block">
+<form name="quizForm_f4" id="quizForm_f4" style="display:block">
+<div id="f4" data-formname="f4" data-questionorder="0" data-questionid="0" data-questiontime="20" data-questionnb="1" data-proposalnb="[6]" data-questionidnextgood="[]" data-questionidnextbad="[]" data-formskill='[""]'></div>
+<div id="notimeout_f4" style="display:none"></br>
+<strong>Question</strong>
+<input type="button" name="with_startstop" value="avec limite de temps" onClick="with_cd(2, 4)" />&nbsp;&nbsp
+<input type="button" name="without_startstop" value="sans limite de temps" onClick="without_cd(4)" />&nbsp;&nbsp
+<strong><span id="cdtime_f4"></span></strong>
+</div>
+<div id="goquiz_f4" style="display:block">
+<div id="question_f4_q1" class="block" style="display:block" data-questionskill="[]"><b><image src="Skin/icon_question_red.gif" height="20"></image>&nbsp;Quelles sont les tables concernées ?</b>
+<table>
+<tr>
+<td><input type="checkbox" id="f4_q1_p1" value="04a1a514f18a0155624c8bfebabd908e58c061e65f198da8a528cde2595f6e94" /></td>
+<td>
+<div id="ans_f4_q1_p1" class="block" style="color:black;display:block">Fournisseur</div>
+<div id ="f4_q1_p1_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p1_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f4_q1_p2" value="df4bd5b4843f40f955ace809a1eb31316cc3691f50a931bdb67932e3884c3a5f" /></td>
+<td>
+<div id="ans_f4_q1_p2" class="block" style="color:black;display:block">Commande</div>
+<div id ="f4_q1_p2_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p2_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f4_q1_p3" value="17d30901fd67f70f2764a99bd4718d7dad76f23a216ea14b07fb1486fbfbd960" /></td>
+<td>
+<div id="ans_f4_q1_p3" class="block" style="color:black;display:block">Ligne commande</div>
+<div id ="f4_q1_p3_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p3_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f4_q1_p4" value="8552f49ae223538cef0f3bc4c82b4eb11a174d9d9392ead09dd00292d6abf24d" /></td>
+<td>
+<div id="ans_f4_q1_p4" class="block" style="color:black;display:block">Type pièce</div>
+<div id ="f4_q1_p4_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p4_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f4_q1_p5" value="4ea81329b9c857e85a65d1a4f258a57a20eb1388ca342a6140bfe373cee78358" /></td>
+<td>
+<div id="ans_f4_q1_p5" class="block" style="color:black;display:block">Pièce</div>
+<div id ="f4_q1_p5_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p5_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+<tr>
+<td><input type="checkbox" id="f4_q1_p6" value="188ba51c4c83fedc066054328a7eba0a932e98365b7bc56c658ce376a12fdb07" /></td>
+<td>
+<div id="ans_f4_q1_p6" class="block" style="color:black;display:block">Commercialiser</div>
+<div id ="f4_q1_p6_1" style="display:none" data-feedback='[""]'></div>
+<div id ="f4_q1_p6_0" style="display:none" data-feedback='[""]'></div>
+</td></tr>
+</table>
+<div id="fok_f4_q1" style="display:none"><b>Excellent !</b></br></div>
+<div id="fpc_f4_q1" style="display:none"><b>Ce n'est pas complet !</b></br></div>
+<div id="fno_f4_q1" style="display:none"><b>Incorrect !</b></br></div>
+<div id="fat_f4_q1" style="display:none"><b>Trop de mauvaises réponses !</b></br></div>
+</div>
+<input type="button" name="valider" value="Valider" onClick="showFeedback(2, 4)" />&nbsp;&nbsp
+<input type="button" name="suivante" value="Suivante" disabled onClick="showquestionIdNext(4)" />&nbsp;&nbsp
+<div id="gauge_f4" class="block" style="display:none">
+<canvas id="text_gauge_f4" width="120" height="70"></canvas>
+<canvas id="chart_gauge_f4" width="100" height="70"></canvas>
+</br></br></div>
+<div id="noradar_f4" style="display:none">
+<div id="radar_f4" class="block" style="display:none">
+<canvas id="chart_radar_f4" width="400" height="400"></canvas></div>
+</div>
+</div>
+</br>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<nav id="sitenav_bottom"></nav>
+<nav class="pagination noprt">
+<a href="Page_1.html" class="prev"><span><span>&laquo; </span>Précédent</span></a><span class="sep"> | </span><a href="Page_3.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</nav>
+</br>
+</section>
+</div>
+</div>
+<script type="text/javascript" src="Skin/_intef_js.js"></script>
+<script type="text/javascript" src="Skin/scores.min.js"></script>
+</body></html>

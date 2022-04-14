@@ -1,0 +1,11 @@
+package projet;
+
+import java.util.*;
+
+public class Role {
+	public Map<Employe, String> roles = new HashMap<Employe, String>();
+	
+	public Role(Employe employe, String role){
+		this.roles.put(employe, role);
+	}
+}

@@ -210,3 +210,2386 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-03-24 08:06:35.755 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2022-03-24 08:06:42.982
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-24 08:06:42.982
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73385d3f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6814262d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-24 08:06:42.982
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7fc1fd31,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75a9cc24,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-24 08:06:48.919
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-03-31 08:22:52.234 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2022-03-31 08:22:59.556
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 08:22:59.556
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73385d3f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6814262d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 08:22:59.556
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7fc1fd31,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75a9cc24,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-31 08:23:05.374
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-03-31 08:57:24.932 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2022-03-31 08:57:30.656
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 08:57:30.656
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6be50b35,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ce2eaa7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 08:57:30.656
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2166c48a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@304744a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-31 08:57:35.870
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.980
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.core.guice,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.983
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.986
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.converter.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.988
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.code.editor.ldef,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.990
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.core,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.993
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.basic.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.995
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.formats.svg,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:53.998
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.converter,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:54.389
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.cssext,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:54.624
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.cssext.proposals,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:54.806
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.cssext.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:54.840
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.css.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:55.185
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.jfx2,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:55.221
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.jfx8,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:55.535
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:55.596
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:56.363
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxgraph,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:56.379
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.fxgraph.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:56.511
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxgraph.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:56.699
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxml,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:56.911
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxml.compiler,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.084
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.fxml.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.116
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.gmod.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.325
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.gmodel,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.356
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.gmodel.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.635
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.jdt.core,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.644
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.jdt.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.787
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.l10n,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.940
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.l10n.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:57.984
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.l10n.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:58.238
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.ldef.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:58.294
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.m2e,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:58.484
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.m2e.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:58.625
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.model,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:58.858
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.mvnosgi.launching,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:58.887
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.mvnosgi.launching.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.083
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.pde.core,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.251
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.pde.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.254
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.pde.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.312
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.pde.ui.e4,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.375
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.389
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot.dsl,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.557
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot.dsl.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:01:59.701
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.rrobot.feature,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:00.060
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot.model,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:00.310
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.ui,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:00.341
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.ui.preview,3.3.0.201805280700 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.028
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.osgi,3.3.0.201805280500 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.029
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.osgi.util,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.096
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.runtime.min.feature,3.3.0.201805280500 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.307
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.animation,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.390
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.controls,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.645
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.panes,3.3.0.201805280600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:02:01.689
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.workbench3,3.3.0.201805280500 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-03-31 09:02:34.803
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.p2.operations.ProfileModificationJob
+!SESSION 2022-03-31 09:02:51.560 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2022-03-31 09:02:57.958
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 09:02:57.958
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56881196,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75c33608,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 09:02:57.958
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25464154,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@58ebee9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-31 09:03:03.729
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:03:51.024
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.0.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:02.125
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.0.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-03-31 09:04:07.826
+!MESSAGE Execution exception for: ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3bfab643,
+		,,true),null) in 
+	context chain: WorkbenchContext -> org.eclipse.ui.contexts.dialog
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error executing 'org.eclipse.ui.edit.copy': java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.ui.viewers.IUDetailsLabelProvider.getClipboardText(Object, String)" because "labelProvider" is null
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:170)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:580)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:647)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1280)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1059)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1084)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1069)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1111)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1107)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1536)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4875)
+	at org.eclipse.swt.widgets.Tree.WM_CHAR(Tree.java:6002)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4753)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:5997)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5002)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.openInstallWizard(ProvisioningUI.java:249)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.openInstallWizard(ProvisioningUI.java:215)
+	at org.eclipse.equinox.internal.p2.ui.sdk.InstallNewSoftwareHandler.doExecute(InstallNewSoftwareHandler.java:35)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler.doExecuteAndLoad(PreloadingRepositoryHandler.java:119)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler.execute(PreloadingRepositoryHandler.java:70)
+	at org.eclipse.equinox.internal.p2.ui.sdk.InstallNewSoftwareHandler.execute(InstallNewSoftwareHandler.java:1)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+Caused by: org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.ui.viewers.IUDetailsLabelProvider.getClipboardText(Object, String)" because "labelProvider" is null
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	... 76 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.ui.viewers.IUDetailsLabelProvider.getClipboardText(Object, String)" because "labelProvider" is null
+	at org.eclipse.equinox.internal.p2.ui.dialogs.CopyUtils.getIndentedClipboardText(CopyUtils.java:43)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.ResolutionResultsWizardPage.getClipboardText(ResolutionResultsWizardPage.java:297)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.ProvisioningWizardPage.copyToClipboard(ProvisioningWizardPage.java:44)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.ResolutionStatusPage.copyToClipboard(ResolutionStatusPage.java:1)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.ResolutionResultsWizardPage.copyToClipboard(ResolutionResultsWizardPage.java:1)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.SizeComputingWizardPage.copyToClipboard(SizeComputingWizardPage.java:1)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.InstallWizardPage.copyToClipboard(InstallWizardPage.java:1)
+	at org.eclipse.equinox.internal.p2.ui.dialogs.CopyHandler.execute(CopyHandler.java:37)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 80 more
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.372
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.formats.svg,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.373
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.core,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.374
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.converter,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.376
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.code.editor.ldef.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.376
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.code.editor.configuration,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.377
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.412
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.code.editor.ldef,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.413
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.core.guice,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.415
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.converter.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:12.416
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.basic.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:13.670
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.cssext.proposals,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:13.672
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.cssext,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:13.714
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.cssext.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:13.716
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.css.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:13.912
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.jfx2,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:14.005
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.jfx8,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:14.547
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.css.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:14.675
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:14.860
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxgraph,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:14.900
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.fxgraph.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:14.965
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxgraph.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:15.255
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxml.compiler,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:15.258
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.fxml,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:15.537
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.fxml.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:15.814
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.gmod.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.041
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.gmodel,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.114
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.jdt.core,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.116
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.gmodel.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.165
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.jdt.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.328
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.l10n,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.513
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.l10n.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:16.717
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.l10n.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.035
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.ldef.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.115
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.model,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.164
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.pde.core,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.329
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.pde.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.342
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.pde.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.544
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.pde.ui.e4,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.676
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:17.957
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot.dsl,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:18.095
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot.dsl.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:18.183
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.ide.rrobot.feature,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:18.335
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.rrobot.model,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:18.586
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.ui,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:18.914
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ide.ui.preview,3.0.0.201705220750 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:18.964
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.osgi,3.0.0.201705220748 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:19.148
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.osgi.util,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:19.443
+!MESSAGE The digest algorithms (md5) used to verify org.eclipse.update.feature,org.eclipse.fx.runtime.min.feature,3.0.0.201705220748 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:19.662
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.animation,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:19.664
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.controls,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:19.882
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.panes,3.0.0.201705220600 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:04:19.949
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.fx.ui.workbench3,3.0.0.201705220748 have severely compromised security. Please report this concern to the artifact provider.
+!SESSION 2022-03-31 09:05:07.546 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/C:/Users/Pierre/Documents/ISEN/CIR3/Semestre2/Java/Developpement/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-03-31 09:05:13.065
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [460]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-03-31 09:05:13.069
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [464]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,6.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.0.0.201705220600"
+       org.eclipse.fx.core.guice [460]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-03-31 09:05:13.072
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [465]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.0.0.201705220750"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [464]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.0.0.201705220600"
+              org.eclipse.fx.core.guice [460]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.0.0.201705220750"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [469]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.0.0.201705220600"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-03-31 09:05:13.076
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [466]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.0.0.201705220600"
+       org.eclipse.fx.core.guice [460]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.0.0.201705220750"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [464]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,6.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.0.0.201705220600"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-03-31 09:05:13.079
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [469]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.0.0.201705220600"
+       org.eclipse.fx.core.guice [460]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.jface 2 0 2022-03-31 09:05:18.883
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 09:05:18.883
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15c4b1a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@341964d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 09:05:18.883
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51b59d58,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ca4f762,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-31 09:05:27.060
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2022-03-31 09:12:35.203
+!MESSAGE The proxied handler for 'org.eclipse.fx.ide.jdt.ui.internal.handler.AddFXBeanGetterSetterHandler' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.eclipse.fx.ide.jdt.ui" was unable to instantiate class "org.eclipse.fx.ide.jdt.ui.internal.handler.AddFXBeanGetterSetterHandler".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:206)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:342)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:227)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:84)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:256)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1084)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1065)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5150)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4782)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5002)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditException
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	... 60 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.ValidateEditException cannot be found by org.eclipse.fx.ide.jdt.ui_3.0.0.201705220750
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:511)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:403)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 65 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2022-03-31 09:12:35.206
+!MESSAGE Plug-in "org.eclipse.fx.ide.jdt.ui" was unable to instantiate class "org.eclipse.fx.ide.jdt.ui.internal.handler.AddFXBeanGetterSetterHandler".
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/ValidateEditException
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:342)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:227)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:133)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:84)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:256)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1084)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1065)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5150)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4782)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2286)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5002)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.ValidateEditException cannot be found by org.eclipse.fx.ide.jdt.ui_3.0.0.201705220750
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:511)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:403)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 65 more
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:23:05.714
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.0.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:23:23.750
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.7.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:23:25.007
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.7.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:23:33.891
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.7.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2022-03-31 09:25:38.489
+!MESSAGE Problems occurred while performing provisioning operation: operation plan must be resolved
+!STACK 0
+java.lang.IllegalStateException: operation plan must be resolved
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.toCurrentJREOperation(ProvUI.java:338)
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.toCompabilityWithCurrentJREProvisioningPlan(ProvUI.java:325)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard.lambda$5(MarketplaceWizard.java:876)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:25:52.629
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.0.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-03-31 09:25:53.772
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/efxclipse/updates-released/3.7.0/site, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2022-03-31 09:28:26.435
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\Pierre\AppData\Local\Temp\C__Users_Pierre_eclipse_java-2021-12_eclipse_60809282-42f5-43e6-9ff9-3c3144793067
+!SESSION 2022-03-31 09:30:05.141 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/C:/Users/Pierre/Documents/ISEN/CIR3/Semestre2/Java/Developpement/ -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-03-31 09:30:13.983
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-03-31 09:30:13.986
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-03-31 09:30:13.987
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-03-31 09:30:13.990
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-03-31 09:30:13.992
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+!SESSION 2022-03-31 09:33:27.801 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data C:/Users/Pierre/Documents/ISEN/CIR3/Semestre2/Java/Developpement -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-03-31 09:33:31.189
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-03-31 09:33:31.197
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-03-31 09:33:31.203
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-03-31 09:33:31.207
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-03-31 09:33:31.207
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-03-31 09:33:39.944
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 09:33:39.945
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@177068db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@60f3239f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-31 09:33:39.945
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b103db7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b3042ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-31 09:33:47.607
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2022-03-31 09:39:53.818
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathBasePage.moveCPElementAcrossNode(BuildPathBasePage.java:336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.LibrariesWorkbookPage$2.performDrop(LibrariesWorkbookPage.java:337)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:273)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:104)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1087)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1072)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:775)
+	at org.eclipse.swt.dnd.DropTarget.Drop(DropTarget.java:467)
+	at org.eclipse.swt.dnd.DropTarget.Drop_64(DropTarget.java:401)
+	at org.eclipse.swt.dnd.DropTarget$1.method6(DropTarget.java:265)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:120)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:546)
+	at org.eclipse.swt.dnd.DragSource.lambda$0(DragSource.java:380)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.ConfigureBuildPathAction.run(ConfigureBuildPathAction.java:88)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1063)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SESSION 2022-04-06 11:28:56.345 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-06 11:29:03.630
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-06 11:29:03.635
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-06 11:29:03.643
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-06 11:29:03.650
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-06 11:29:03.659
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-06 11:29:08.612
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-06 11:29:08.612
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56a9a7b5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1dd247b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-06 11:29:08.612
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@338270ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f64bd7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-06 11:29:18.098
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-04-07 08:04:52.885 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-07 08:04:59.783
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-07 08:04:59.790
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-07 08:04:59.798
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-07 08:04:59.807
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-07 08:04:59.807
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-07 08:05:06.272
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-07 08:05:06.273
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56a9a7b5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1dd247b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-07 08:05:06.273
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@338270ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f64bd7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-07 08:05:14.316
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-04-07 08:55:51.957
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:275)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.pde.internal.ui.util.SharedLabelProvider.createImage(SharedLabelProvider.java:114)
+	at org.eclipse.pde.internal.ui.util.SharedLabelProvider.get(SharedLabelProvider.java:90)
+	at org.eclipse.pde.internal.ui.util.SharedLabelProvider.get(SharedLabelProvider.java:79)
+	at org.eclipse.pde.internal.ui.correction.java.SearchRepositoriesForIUProposal.getImage(SearchRepositoriesForIUProposal.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalLink(AbstractAnnotationHover.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsList(AbstractAnnotationHover.java:396)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.createCompletionProposalsControl(AbstractAnnotationHover.java:377)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:306)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:190)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SESSION 2022-04-07 08:55:57.193 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-07 08:56:01.856
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-07 08:56:01.861
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-07 08:56:01.868
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-07 08:56:01.874
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-07 08:56:01.878
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-07 08:56:05.485
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-07 08:56:05.486
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5badeda0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56a9a7b5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-07 08:56:05.486
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1dd247b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@338270ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-07 08:56:11.790
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-04-07 08:57:52.779 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-07 08:57:56.944
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-07 08:57:56.950
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-07 08:57:56.951
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-07 08:57:56.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-07 08:57:56.963
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-07 08:58:00.071
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-07 08:58:00.072
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5badeda0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56a9a7b5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-07 08:58:00.072
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1dd247b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@338270ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-07 08:58:05.535
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-04-13 10:26:58.400 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-13 10:27:04.037
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-13 10:27:04.042
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-13 10:27:04.048
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-13 10:27:04.054
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-13 10:27:04.059
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-13 10:27:07.643
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-13 10:27:07.643
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@338270ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f64bd7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-13 10:27:07.644
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c79d093,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@746fd19b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-13 10:27:14.430
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-04-14 08:05:40.949 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=17.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-04-14 08:05:47.434
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [660]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-04-14 08:05:47.440
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [664]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-04-14 08:05:47.447
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [665]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [669]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-04-14 08:05:47.454
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [666]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [664]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [660]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-04-14 08:05:47.459
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [669]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [660]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-14 08:05:54.368
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-14 08:05:54.368
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1dd247b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@338270ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-14 08:05:54.368
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f64bd7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c79d093,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-14 08:06:02.369
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Pierre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

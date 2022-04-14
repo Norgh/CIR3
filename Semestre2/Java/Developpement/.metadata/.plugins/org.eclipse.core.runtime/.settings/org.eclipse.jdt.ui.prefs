@@ -1,6 +1,7 @@
-content_assist_number_of_computers=12
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_number_of_computers=13
 eclipse.preferences.version=1
-org.eclipse.jdt.ui.formatterprofiles.version=21
+org.eclipse.jdt.ui.formatterprofiles.version=22
 spelling_ignore_ampersand_in_properties=true
 spelling_ignore_digits=true
 spelling_ignore_java_strings=true
