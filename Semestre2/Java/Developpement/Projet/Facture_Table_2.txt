@@ -1,0 +1,10 @@
+Facture de la table 2 :
+
+Cette facture contient 1 plats et 0 boissons.
+
+Les plats commandés :
+	Salade à 9€
+
+Les boissons commandées :
+Cette addition coûte au total : 18€
+

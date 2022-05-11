@@ -1,0 +1,12 @@
+Facture de la table 3 :
+
+Cette facture contient 3 plats et 0 boissons.
+
+Les plats commandés :
+	Salade Tomate à 9€
+	Salade à 9€
+	Soupe oignon à 8€
+
+Les boissons commandées :
+Cette addition coûte au total : 86€
+

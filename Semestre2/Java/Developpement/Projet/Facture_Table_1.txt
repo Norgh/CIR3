@@ -1,0 +1,17 @@
+Facture de la table 1 :
+
+Cette facture contient 7 plats et 1 boissons.
+
+Les plats commandés :
+	Fajitas Poulet à 11€
+	Fajitas Poulet à 11€
+	Soupe Tomate à 8€
+	Soupe oignon à 8€
+	Soupe oignon à 8€
+	Soupe oignon à 8€
+	Soupe Champignons à 8€
+
+Les boissons commandées :
+	Biere sans Alcool à 5€
+Cette addition coûte au total : 67€
+
